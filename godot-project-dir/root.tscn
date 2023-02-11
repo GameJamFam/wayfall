@@ -1,11 +1,28 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://NPC/SeaCucumber/Cuke.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/L_ShrimpTown.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Levels/L_IsopodWay.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/L_CucumberPit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/L_CrabTown.tscn" type="PackedScene" id=6]
 
 [node name="root" type="Node"]
 
+[node name="L_ShrimpTown" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3247, -701 )
+
+[node name="L_IsopodWay" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5018, 2597 )
+
+[node name="L_CucumberPit" parent="." instance=ExtResource( 5 )]
+position = Vector2( 467, -910 )
+
+[node name="L_CrabTown" parent="." instance=ExtResource( 6 )]
+position = Vector2( -3699, 3754 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 490, 1351 )
 
 [node name="NPCs" type="Node" parent="."]
 

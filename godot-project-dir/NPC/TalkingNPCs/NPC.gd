@@ -8,7 +8,13 @@ var dialogue = null
 
 var player = null
 
-func _on_pressed_interact():
+func airpod_interact():
+    pass
+
+func _on_pressed_interact(airpod):  
+    if airpod:
+        airpod_interact()
+        return
     if is_instance_valid(dialogue) or dialogic_timeline == "":
         return
     dialogue = Dialogic.start(dialogic_timeline)

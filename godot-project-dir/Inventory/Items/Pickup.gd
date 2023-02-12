@@ -11,13 +11,14 @@ func _ready():
 	anim.play("Wiggle")
 
 
-func _on_pressed_interact():
+func _on_pressed_interact(_airpod):
 	if is_instance_valid(dialogue):
 		return
 	dialogue = Dialogic.start(self.name)
 	add_child(dialogue)
 	player.set_input(false)
 	anim.play("Pickup")
+	yield(anim, "animation_finished")
 	player.get_node("Camera/Canvas/Inventory").add_pickup(self.name)
 	yield(dialogue, "timeline_end")
 	player.set_input(true)

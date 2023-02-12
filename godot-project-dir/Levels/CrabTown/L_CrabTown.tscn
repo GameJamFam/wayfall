@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Levels/CrabTown/crabtown-walls.tres" type="Texture" id=1]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform vec2 scale = vec2(10.0);
+uniform bool seamless = false;
+
+float rand(vec2 coord) {
+	return fract(sin(dot(coord, vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+float perlin_noise(vec2 coord) {
+	vec2 i = floor(coord);
+	vec2 f = fract(coord);
+	
+	float t_l = rand(i) * 6.283;
+	float t_r = rand(i + vec2(1, 0)) * 6.283;
+	float b_l = rand(i + vec2(0, 1)) * 6.283;
+	float b_r = rand(i + vec2(1)) * 6.283;
+	
+	vec2 t_l_vec = vec2(-sin(t_l), cos(t_l));
+	vec2 t_r_vec = vec2(-sin(t_r), cos(t_r));
+	vec2 b_l_vec = vec2(-sin(b_l), cos(b_l));
+	vec2 b_r_vec = vec2(-sin(b_r), cos(b_r));
+	
+	float t_l_dot = dot(t_l_vec, f);
+	float t_r_dot = dot(t_r_vec, f - vec2(1, 0));
+	float b_l_dot = dot(b_l_vec, f - vec2(0, 1));
+	float b_r_dot = dot(b_r_vec, f - vec2(1));
+	
+	vec2 cubic = f * f * (3.0 - 2.0 * f);
+	
+	float top_mix = mix(t_l_dot, t_r_dot, cubic.x);
+	float bot_mix = mix(b_l_dot, b_r_dot, cubic.x);
+	float whole_mix = mix(top_mix, bot_mix, cubic.y);
+	
+	return whole_mix + 0.5;
+}
+
+void fragment() {
+	vec2 coord = UV * scale;
+	float value = perlin_noise(coord);
+	COLOR = vec4(vec3(value), 1.0);
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/scale = Vector2( 10, 10 )
+shader_param/seamless = false
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.2, 0.2, 0.2, 1 )
+
+[sub_resource type="GradientTexture2D" id=4]
+gradient = SubResource( 3 )
+fill_from = Vector2( 0.483333, 0 )
+fill_to = Vector2( 0.511111, 1 )
+
+[node name="L_CrabTown" type="Node2D"]
+position = Vector2( 1, 0 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="DeepOcean" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/DeepOcean"]
+modulate = Color( 1, 1, 1, 0.231373 )
+material = SubResource( 2 )
+margin_left = -1827.0
+margin_top = -934.0
+margin_right = 1630.0
+margin_bottom = 919.0
+texture = SubResource( 4 )
+expand = true
+
+[node name="Walls" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Walls" type="KinematicBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Walls"]
+position = Vector2( -0.4, 0 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 1 )

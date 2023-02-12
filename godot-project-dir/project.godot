@@ -102,13 +102,9 @@ config/name="black-and-white-jam"
 run/main_scene="res://root.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-AntialiasedLine2DTexture="*res://addons/antialiased_line2d/texture.gd"
-
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/antialiased_line2d/plugin.cfg", "res://addons/dialogic/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
 
 [gui]
 

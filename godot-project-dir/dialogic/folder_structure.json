@@ -45,7 +45,18 @@
 				"timeline-1676147179.json"
 			],
 			"folders": {
+				"ItemPickups": {
+					"files": [
+						"timeline-1676233173.json"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,

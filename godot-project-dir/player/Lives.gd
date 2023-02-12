@@ -1,12 +1,14 @@
 extends HBoxContainer
 
 onready var player = get_node("../../..") # terrible
+onready var wipe_anim = get_node("../Wipe/AnimationPlayer")
+onready var sprite = get_node("../../../AnimatedSprite")
+
 const MAX_HEARTS = 3
 var current_health = 3
 
 
 func _ready():
-	var wipe_anim = get_node("../Wipe/AnimationPlayer")
 	wipe_anim.play("CircleWipe")
 
 
@@ -14,7 +16,6 @@ func die():
 	player.set_input(false)
 	get_child(0).visible = false
 	# 1. Wipe screen
-	var wipe_anim = get_node("../Wipe/AnimationPlayer")
 	wipe_anim.play_backwards("CircleWipe")
 	yield(wipe_anim, "animation_finished")
 
@@ -30,9 +31,15 @@ func die():
 	wipe_anim.play("CircleWipe")
 	player.set_input(true)
 
+func flash_hurt():
+	sprite.modulate = Color(1, 1, 1, 0.5)
+	yield(get_tree().create_timer(0.2), "timeout")
+	sprite.modulate = Color(1, 1, 1, 1)
+
 
 func hurt_player(dmg):
 	current_health -= dmg
+	flash_hurt()
 	if current_health < 1:
 		die()
 	else:
@@ -43,7 +50,3 @@ func hurt_player(dmg):
 			else:
 				lives[life].visible = false
 	
-
-func _process(_delta):
-	if Input.is_action_just_pressed("ui_accept"):
-		hurt_player(1)

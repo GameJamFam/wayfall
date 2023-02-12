@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://NPC/SeaCucumber/Cuke.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Levels/L_CucumberPit.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Levels/CrabTown/L_CrabTown.tscn" type="PackedScene" id=6]
 [ext_resource path="res://NPC/TalkingNPCs/BASE_NPC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://NPC/Urchin/C_Urchin.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Inventory/Items/Airpod.tscn" type="PackedScene" id=9]
 
 [node name="root" type="Node"]
 
@@ -33,3 +35,9 @@ gravity_scale = 0.01
 
 [node name="C_OldShrimp" parent="NPCs" instance=ExtResource( 7 )]
 position = Vector2( 925, 1352 )
+
+[node name="C_Urchin" parent="NPCs" instance=ExtResource( 8 )]
+position = Vector2( 401, 1244 )
+
+[node name="Airpod" parent="NPCs/C_Urchin" instance=ExtResource( 9 )]
+position = Vector2( 27, 376 )

@@ -9,24 +9,24 @@ var dialogue = null
 var player = null
 
 func _on_pressed_interact():
-    if is_instance_valid(dialogue) or dialogic_timeline == "":
-        return
-    dialogue = Dialogic.start(dialogic_timeline)
-    dialogue_playing = true
-    add_child(dialogue)
-    player.set_input(false)
-    dialogic_timeline = ""
-    yield(dialogue, "timeline_end")
-    player.set_input(true)
+	if is_instance_valid(dialogue) or dialogic_timeline == "":
+		return
+	dialogue = Dialogic.start(dialogic_timeline)
+	dialogue_playing = true
+	add_child(dialogue)
+	player.set_input(false)
+	dialogic_timeline = ""
+	yield(dialogue, "timeline_end")
+	player.set_input(true)
 
 
 func _on_InteractionSphere_body_exited(body:Node):
-    if body.name == "Player":
-        body.get_node("Interactor").disconnect("pressed_interact", self, "_on_pressed_interact")
-        player = null
+	if body.name == "Player":
+		body.get_node("Interactor").disconnect("pressed_interact", self, "_on_pressed_interact")
+		player = null
 
 
 func _on_InteractionSphere_body_entered(body:Node):
-    if body.name == "Player":
-        body.get_node("Interactor").connect("pressed_interact", self, "_on_pressed_interact")
-        player = body
+	if body.name == "Player":
+		body.get_node("Interactor").connect("pressed_interact", self, "_on_pressed_interact")
+		player = body

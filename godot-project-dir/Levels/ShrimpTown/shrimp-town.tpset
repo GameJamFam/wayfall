@@ -1,0 +1,168 @@
+{
+	"textures": [
+		{
+			"image": "shrimp-town.png",
+			"size": {
+				"w": 1915,
+				"h": 1028
+			},
+			"sprites": [
+				{
+					"filename": "shrimp-villiage-0.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-6.png",
+					"region": {
+						"x": 1,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-7.png",
+					"region": {
+						"x": 515,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-21.png",
+					"region": {
+						"x": 515,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-22.png",
+					"region": {
+						"x": 1029,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-23.png",
+					"region": {
+						"x": 1029,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-12.png",
+					"region": {
+						"x": 1543,
+						"y": 1,
+						"w": 209,
+						"h": 512
+					},
+					"margin": {
+						"x": 303,
+						"y": 0,
+						"w": 303,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-17.png",
+					"region": {
+						"x": 1543,
+						"y": 515,
+						"w": 204,
+						"h": 512
+					},
+					"margin": {
+						"x": 308,
+						"y": 0,
+						"w": 308,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-11.png",
+					"region": {
+						"x": 1749,
+						"y": 515,
+						"w": 165,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 347,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shrimp-villiage-16.png",
+					"region": {
+						"x": 1754,
+						"y": 1,
+						"w": 158,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 354,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:5c3684d6a3fd178a3b92f29fec758e66:dbb5662ccb39439f96e536327a85c56e:0525a1ff94bee59fc99aefa18408166e$"
+	}
+}

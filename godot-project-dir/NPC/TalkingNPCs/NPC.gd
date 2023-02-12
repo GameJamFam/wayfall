@@ -27,12 +27,12 @@ func _on_pressed_interact(airpod):
 
 
 func _on_InteractionSphere_body_exited(body:Node):
-    if body.name == "Player":
-        body.get_node("Interactor").disconnect("pressed_interact", self, "_on_pressed_interact")
-        player = null
+	if body.name == "Player":
+		body.get_node("Interactor").disconnect("pressed_interact", self, "_on_pressed_interact")
+		player = null
 
 
 func _on_InteractionSphere_body_entered(body:Node):
-    if body.name == "Player":
-        body.get_node("Interactor").connect("pressed_interact", self, "_on_pressed_interact")
-        player = body
+	if body.name == "Player":
+		body.get_node("Interactor").connect("pressed_interact", self, "_on_pressed_interact")
+		player = body

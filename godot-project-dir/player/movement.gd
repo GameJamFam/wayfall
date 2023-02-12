@@ -14,22 +14,21 @@ var old_speed = Vector2()
 
 var can_boost = true
 func enable_boost():
-    speed = old_speed
-    yield(get_tree().create_timer(boost_cooldown), "timeout")
-    can_boost = true
+	speed = old_speed
+	yield(get_tree().create_timer(boost_cooldown), "timeout")
+	can_boost = true
 
 var can_move = true
 func set_input(state):
-    can_move = state
-    bobbing = false
+	can_move = state
+	bobbing = false
 
 
 export var bob_velocity = -10
 export var bob_timeout = 0.4
 var bobbing = false
 func bob():
-    velocity.x = 0
-
+	velocity.x = 0
     if bobbing:
         velocity.y = bob_velocity
         yield(get_tree().create_timer(bob_timeout), "timeout")
@@ -46,34 +45,34 @@ func _on_checkpoint_set(pos:Vector2):
     last_checkpoint = pos
 
 func get_input():
-    velocity.y = gravity
+	velocity.y = gravity
 
-    if Input.is_action_pressed("ui_accept") and can_boost:
-        old_speed = speed
-        speed.x *= boost_amt
-        can_boost = false
+	if Input.is_action_pressed("ui_accept") and can_boost:
+		old_speed = speed
+		speed.x *= boost_amt
+		can_boost = false
 
-    if Input.is_action_pressed("ui_right"):
-        velocity.x = min(velocity.x + acceleration, speed.x)
-        $AnimatedSprite.flip_h = false
-    if Input.is_action_pressed("ui_left"):
-        velocity.x = max(velocity.x - acceleration, -speed.x)
-        $AnimatedSprite.flip_h = true
-    if Input.is_action_pressed("ui_up"):
-        velocity.y = -speed.y
-    elif Input.is_action_pressed("ui_down"):
-        velocity.y = speed.y
-    
-    if !can_boost:
-        yield(get_tree().create_timer(boost_time), "timeout")
-        enable_boost()
+	if Input.is_action_pressed("ui_right"):
+		velocity.x = min(velocity.x + acceleration, speed.x)
+		$AnimatedSprite.flip_h = false
+	if Input.is_action_pressed("ui_left"):
+		velocity.x = max(velocity.x - acceleration, -speed.x)
+		$AnimatedSprite.flip_h = true
+	if Input.is_action_pressed("ui_up"):
+		velocity.y = -speed.y
+	elif Input.is_action_pressed("ui_down"):
+		velocity.y = speed.y
+	
+	if !can_boost:
+		yield(get_tree().create_timer(boost_time), "timeout")
+		enable_boost()
 
-    velocity.x = lerp(velocity.x, 0, decel_x)
+	velocity.x = lerp(velocity.x, 0, decel_x)
 
 func _physics_process(delta):
-    if can_move:
-        get_input()
-    else:
-        bob()
-    velocity = move_and_slide(velocity)
+	if can_move:
+		get_input()
+	else:
+		bob()
+	velocity = move_and_slide(velocity)
 

@@ -7,6 +7,8 @@ export var boost_amt = 200
 export var boost_time = 0.5
 export var boost_cooldown = 1.0
 
+onready var last_checkpoint = position
+
 var velocity = Vector2()
 var old_speed = Vector2()
 
@@ -37,7 +39,11 @@ func bob():
         yield(get_tree().create_timer(bob_timeout), "timeout")
         bobbing = true
         
-    
+func go_to_last_checkpoint():
+    position = last_checkpoint
+
+func _on_checkpoint_set(pos:Vector2):
+    last_checkpoint = pos
 
 func get_input():
     velocity.y = gravity

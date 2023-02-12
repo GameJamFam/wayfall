@@ -29,20 +29,20 @@ export var bob_timeout = 0.4
 var bobbing = false
 func bob():
 	velocity.x = 0
-    if bobbing:
-        velocity.y = bob_velocity
-        yield(get_tree().create_timer(bob_timeout), "timeout")
-        bobbing = false
-    else:
-        velocity.y = gravity
-        yield(get_tree().create_timer(bob_timeout), "timeout")
-        bobbing = true
-        
+	if bobbing:
+		velocity.y = bob_velocity
+		yield(get_tree().create_timer(bob_timeout), "timeout")
+		bobbing = false
+	else:
+		velocity.y = gravity
+		yield(get_tree().create_timer(bob_timeout), "timeout")
+		bobbing = true
+		
 func go_to_last_checkpoint():
-    position = last_checkpoint
+	position = last_checkpoint
 
 func _on_checkpoint_set(pos:Vector2):
-    last_checkpoint = pos
+	last_checkpoint = pos
 
 func get_input():
 	velocity.y = gravity

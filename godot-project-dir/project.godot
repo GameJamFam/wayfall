@@ -86,7 +86,6 @@ config/icon="res://icon.png"
 
 [editor_plugins]
 
-
 enabled=PoolStringArray( "res://addons/codeandweb.texturepacker/plugin.cfg", "res://addons/dialogic/plugin.cfg" )
 
 [gui]

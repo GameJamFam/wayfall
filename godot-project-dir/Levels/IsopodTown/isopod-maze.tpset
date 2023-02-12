@@ -1,0 +1,798 @@
+{
+	"textures": [
+		{
+			"image": "isopod-maze.png",
+			"size": {
+				"w": 3083,
+				"h": 3782
+			},
+			"sprites": [
+				{
+					"filename": "isopod-maze-0.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-28.png",
+					"region": {
+						"x": 1,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-29.png",
+					"region": {
+						"x": 515,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-43.png",
+					"region": {
+						"x": 1,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-44.png",
+					"region": {
+						"x": 515,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-47.png",
+					"region": {
+						"x": 1029,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-52.png",
+					"region": {
+						"x": 1,
+						"y": 1543,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-54.png",
+					"region": {
+						"x": 515,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-59.png",
+					"region": {
+						"x": 1029,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-64.png",
+					"region": {
+						"x": 1543,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-66.png",
+					"region": {
+						"x": 1,
+						"y": 2057,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-68.png",
+					"region": {
+						"x": 515,
+						"y": 1543,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-75.png",
+					"region": {
+						"x": 1029,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-79.png",
+					"region": {
+						"x": 1543,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-80.png",
+					"region": {
+						"x": 2057,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-63.png",
+					"region": {
+						"x": 2571,
+						"y": 1,
+						"w": 511,
+						"h": 512
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-84.png",
+					"region": {
+						"x": 1,
+						"y": 2571,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-91.png",
+					"region": {
+						"x": 515,
+						"y": 2057,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-93.png",
+					"region": {
+						"x": 1029,
+						"y": 1543,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-94.png",
+					"region": {
+						"x": 1543,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-113.png",
+					"region": {
+						"x": 2057,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-115.png",
+					"region": {
+						"x": 1,
+						"y": 3085,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-88.png",
+					"region": {
+						"x": 515,
+						"y": 2571,
+						"w": 512,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "isopod-maze-70.png",
+					"region": {
+						"x": 1029,
+						"y": 2057,
+						"w": 512,
+						"h": 461
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 51
+					}
+				},
+				{
+					"filename": "isopod-maze-77.png",
+					"region": {
+						"x": 1543,
+						"y": 1543,
+						"w": 455,
+						"h": 512
+					},
+					"margin": {
+						"x": 57,
+						"y": 0,
+						"w": 57,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-74.png",
+					"region": {
+						"x": 2057,
+						"y": 1029,
+						"w": 512,
+						"h": 437
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 75
+					}
+				},
+				{
+					"filename": "isopod-maze-71.png",
+					"region": {
+						"x": 515,
+						"y": 3073,
+						"w": 512,
+						"h": 427
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 85
+					}
+				},
+				{
+					"filename": "isopod-maze-72.png",
+					"region": {
+						"x": 1029,
+						"y": 2520,
+						"w": 512,
+						"h": 425
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 87
+					}
+				},
+				{
+					"filename": "isopod-maze-60.png",
+					"region": {
+						"x": 2571,
+						"y": 515,
+						"w": 421,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 91,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-46.png",
+					"region": {
+						"x": 1029,
+						"y": 2947,
+						"w": 512,
+						"h": 415
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 97
+					}
+				},
+				{
+					"filename": "isopod-maze-61.png",
+					"region": {
+						"x": 1543,
+						"y": 2057,
+						"w": 456,
+						"h": 466
+					},
+					"margin": {
+						"x": 56,
+						"y": 46,
+						"w": 56,
+						"h": 46
+					}
+				},
+				{
+					"filename": "isopod-maze-86.png",
+					"region": {
+						"x": 1543,
+						"y": 2525,
+						"w": 512,
+						"h": 415
+					},
+					"margin": {
+						"x": 0,
+						"y": 97,
+						"w": 0,
+						"h": 97
+					}
+				},
+				{
+					"filename": "isopod-maze-45.png",
+					"region": {
+						"x": 1543,
+						"y": 2942,
+						"w": 512,
+						"h": 414
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 98
+					}
+				},
+				{
+					"filename": "isopod-maze-82.png",
+					"region": {
+						"x": 2571,
+						"y": 1029,
+						"w": 338,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 174,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-114.png",
+					"region": {
+						"x": 1,
+						"y": 3599,
+						"w": 512,
+						"h": 182
+					},
+					"margin": {
+						"x": 0,
+						"y": 330,
+						"w": 0,
+						"h": 330
+					}
+				},
+				{
+					"filename": "isopod-maze-65.png",
+					"region": {
+						"x": 515,
+						"y": 3502,
+						"w": 512,
+						"h": 277
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 235
+					}
+				},
+				{
+					"filename": "isopod-maze-87.png",
+					"region": {
+						"x": 1029,
+						"y": 3364,
+						"w": 512,
+						"h": 408
+					},
+					"margin": {
+						"x": 0,
+						"y": 104,
+						"w": 0,
+						"h": 104
+					}
+				},
+				{
+					"filename": "isopod-maze-73.png",
+					"region": {
+						"x": 1543,
+						"y": 3358,
+						"w": 512,
+						"h": 391
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 121
+					}
+				},
+				{
+					"filename": "isopod-maze-53.png",
+					"region": {
+						"x": 2057,
+						"y": 1468,
+						"w": 512,
+						"h": 390
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 122
+					}
+				},
+				{
+					"filename": "isopod-maze-76.png",
+					"region": {
+						"x": 2571,
+						"y": 1543,
+						"w": 420,
+						"h": 354
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 92,
+						"h": 158
+					}
+				},
+				{
+					"filename": "isopod-maze-92.png",
+					"region": {
+						"x": 2001,
+						"y": 1860,
+						"w": 512,
+						"h": 373
+					},
+					"margin": {
+						"x": 0,
+						"y": 139,
+						"w": 0,
+						"h": 139
+					}
+				},
+				{
+					"filename": "isopod-maze-67.png",
+					"region": {
+						"x": 2001,
+						"y": 2235,
+						"w": 512,
+						"h": 264
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 248
+					}
+				},
+				{
+					"filename": "isopod-maze-99.png",
+					"region": {
+						"x": 2057,
+						"y": 2501,
+						"w": 308,
+						"h": 512
+					},
+					"margin": {
+						"x": 204,
+						"y": 0,
+						"w": 204,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-85.png",
+					"region": {
+						"x": 2515,
+						"y": 1899,
+						"w": 512,
+						"h": 346
+					},
+					"margin": {
+						"x": 0,
+						"y": 166,
+						"w": 0,
+						"h": 166
+					}
+				},
+				{
+					"filename": "isopod-maze-78.png",
+					"region": {
+						"x": 2515,
+						"y": 2247,
+						"w": 512,
+						"h": 303
+					},
+					"margin": {
+						"x": 0,
+						"y": 209,
+						"w": 0,
+						"h": 209
+					}
+				},
+				{
+					"filename": "isopod-maze-62.png",
+					"region": {
+						"x": 2057,
+						"y": 3015,
+						"w": 289,
+						"h": 447
+					},
+					"margin": {
+						"x": 0,
+						"y": 49,
+						"w": 223,
+						"h": 65
+					}
+				},
+				{
+					"filename": "isopod-maze-81.png",
+					"region": {
+						"x": 2367,
+						"y": 2552,
+						"w": 512,
+						"h": 343
+					},
+					"margin": {
+						"x": 0,
+						"y": 169,
+						"w": 0,
+						"h": 169
+					}
+				},
+				{
+					"filename": "isopod-maze-89.png",
+					"region": {
+						"x": 2367,
+						"y": 2897,
+						"w": 512,
+						"h": 338
+					},
+					"margin": {
+						"x": 0,
+						"y": 174,
+						"w": 0,
+						"h": 174
+					}
+				},
+				{
+					"filename": "isopod-maze-90.png",
+					"region": {
+						"x": 2348,
+						"y": 3237,
+						"w": 512,
+						"h": 337
+					},
+					"margin": {
+						"x": 0,
+						"y": 175,
+						"w": 0,
+						"h": 175
+					}
+				},
+				{
+					"filename": "isopod-maze-98.png",
+					"region": {
+						"x": 2881,
+						"y": 2552,
+						"w": 188,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 324,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-maze-83.png",
+					"region": {
+						"x": 2057,
+						"y": 3464,
+						"w": 242,
+						"h": 77
+					},
+					"margin": {
+						"x": 270,
+						"y": 170,
+						"w": 270,
+						"h": 435
+					}
+				},
+				{
+					"filename": "isopod-maze-69.png",
+					"region": {
+						"x": 2057,
+						"y": 3576,
+						"w": 512,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 309,
+						"w": 0,
+						"h": 436
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8fe2dc1f41f8f1b20102a0309b559b0f:0434ae6bff4b2ecc704604fa0629dc6a:a58e958e052739a4290b78244dec09a2$"
+	}
+}

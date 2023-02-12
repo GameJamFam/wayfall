@@ -1,6 +1,11 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://map refs/shrimp town details.png" type="Texture" id=1]
+[ext_resource path="res://Levels/ShrimpTown/shrimp-town.res" type="TileSet" id=1]
 
-[node name="L_ShrimpTown" type="Sprite"]
-texture = ExtResource( 1 )
+[node name="L_ShrimpTown" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 512, 512 )
+format = 1
+tile_data = PoolIntArray( -65537, 1, 0, -131072, 2, 0, -1, 8, 0, -65536, 6, 0, 65535, 9, 0, 0, 7, 0, 131070, 0, 0, 131071, 3, 0, 65536, 4, 0, 65537, 5, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0 )

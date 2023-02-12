@@ -1,0 +1,408 @@
+{
+	"textures": [
+		{
+			"image": "cuke-pits.png",
+			"size": {
+				"w": 4021,
+				"h": 1542
+			},
+			"sprites": [
+				{
+					"filename": "cucumber-pit-0.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-2.png",
+					"region": {
+						"x": 515,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-3.png",
+					"region": {
+						"x": 1029,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-8.png",
+					"region": {
+						"x": 1543,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-9.png",
+					"region": {
+						"x": 2057,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-10.png",
+					"region": {
+						"x": 2571,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-14.png",
+					"region": {
+						"x": 3085,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-37.png",
+					"region": {
+						"x": 3599,
+						"y": 1,
+						"w": 138,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 374,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-32.png",
+					"region": {
+						"x": 3739,
+						"y": 1,
+						"w": 199,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 313,
+						"h": 401
+					}
+				},
+				{
+					"filename": "cucumber-pit-33.png",
+					"region": {
+						"x": 3739,
+						"y": 114,
+						"w": 250,
+						"h": 102
+					},
+					"margin": {
+						"x": 262,
+						"y": 0,
+						"w": 262,
+						"h": 410
+					}
+				},
+				{
+					"filename": "cucumber-pit-15.png",
+					"region": {
+						"x": 1,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-19.png",
+					"region": {
+						"x": 515,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-22.png",
+					"region": {
+						"x": 1029,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-25.png",
+					"region": {
+						"x": 1543,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-27.png",
+					"region": {
+						"x": 2057,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-31.png",
+					"region": {
+						"x": 2571,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-34.png",
+					"region": {
+						"x": 3085,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-38.png",
+					"region": {
+						"x": 3599,
+						"y": 515,
+						"w": 417,
+						"h": 2
+					},
+					"margin": {
+						"x": 95,
+						"y": 510,
+						"w": 95,
+						"h": 510
+					}
+				},
+				{
+					"filename": "cucumber-pit-39.png",
+					"region": {
+						"x": 1,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-42.png",
+					"region": {
+						"x": 515,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-43.png",
+					"region": {
+						"x": 1029,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-44.png",
+					"region": {
+						"x": 1543,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-45.png",
+					"region": {
+						"x": 2057,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-26.png",
+					"region": {
+						"x": 2571,
+						"y": 1029,
+						"w": 512,
+						"h": 201
+					},
+					"margin": {
+						"x": 0,
+						"y": 311,
+						"w": 0,
+						"h": 311
+					}
+				},
+				{
+					"filename": "cucumber-pit-21.png",
+					"region": {
+						"x": 3085,
+						"y": 1029,
+						"w": 482,
+						"h": 512
+					},
+					"margin": {
+						"x": 30,
+						"y": 0,
+						"w": 30,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cucumber-pit-20.png",
+					"region": {
+						"x": 3569,
+						"y": 1029,
+						"w": 451,
+						"h": 377
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 61,
+						"h": 135
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:49908bf41496eb9833758d579a024066:53b553cd79e32044266f5cd8fa208bda:81336ceb71b94688602ca2fc8a902781$"
+	}
+}

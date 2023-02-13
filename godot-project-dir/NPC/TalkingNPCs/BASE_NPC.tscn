@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://player/player.png" type="Texture" id=1]
-[ext_resource path="res://NPC/NPC.gd" type="Script" id=2]
+[ext_resource path="res://NPC/TalkingNPCs/NPC.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 294.007
+radius = 277.953
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -17,8 +17,9 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=3]
 radius = 112.009
 
-[node name="NPC" type="Node2D"]
+[node name="BASE_NPC" type="Node2D"]
 script = ExtResource( 2 )
+dialogic_timeline = "intro_cutscene"
 
 [node name="InteractionSphere" type="Area2D" parent="."]
 

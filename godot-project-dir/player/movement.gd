@@ -7,6 +7,9 @@ export var boost_amt = 200
 export var boost_time = 0.5
 export var boost_cooldown = 1.0
 
+onready var last_checkpoint = position
+onready var sprite = $AnimatedSprite
+
 var velocity = Vector2()
 var old_speed = Vector2()
 
@@ -27,7 +30,6 @@ export var bob_timeout = 0.4
 var bobbing = false
 func bob():
 	velocity.x = 0
-
 	if bobbing:
 		velocity.y = bob_velocity
 		yield(get_tree().create_timer(bob_timeout), "timeout")
@@ -37,7 +39,12 @@ func bob():
 		yield(get_tree().create_timer(bob_timeout), "timeout")
 		bobbing = true
 		
-	
+
+func go_to_last_checkpoint():
+	position = last_checkpoint
+
+func _on_checkpoint_set(pos:Vector2):
+	last_checkpoint = pos
 
 func get_input():
 	velocity.y = gravity
@@ -49,10 +56,10 @@ func get_input():
 
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = min(velocity.x + acceleration, speed.x)
-		$AnimatedSprite.flip_h = false
+		sprite.flip_h = false
 	if Input.is_action_pressed("ui_left"):
 		velocity.x = max(velocity.x - acceleration, -speed.x)
-		$AnimatedSprite.flip_h = true
+		sprite.flip_h = true
 	if Input.is_action_pressed("ui_up"):
 		velocity.y = -speed.y
 	elif Input.is_action_pressed("ui_down"):

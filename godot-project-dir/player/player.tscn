@@ -87,12 +87,10 @@ tracks/0/keys = {
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( -2, 0 )
 script = ExtResource( 2 )
-speed = Vector2( 280, 50 )
+speed = Vector2( 250, 150 )
 gravity = 5.0
-acceleration = 15
-boost_amt = 300
-bob_velocity = -5
-bob_timeout = 1.0
+acceleration = 70
+boost_amt = 500
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 0.575959

@@ -8,7 +8,6 @@
 scale = Vector2( 2, 2 )
 
 [node name="TileMap" type="TileMap" parent="."]
-visible = false
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 512, 512 )
 format = 1
@@ -17,28 +16,31 @@ tile_data = PoolIntArray( -131072, 3, 0, -131071, 4, 0, -131070, 32, 0, -131069,
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="background" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( -3504, -3927 )
 
 [node name="SeaCucumberKing1" type="Sprite" parent="ParallaxBackground/background"]
 modulate = Color( 0.4, 0.4, 0.4, 1 )
-position = Vector2( 457, 299 )
-scale = Vector2( 5.95142, 5.95142 )
+position = Vector2( 432, 1009 )
+scale = Vector2( 3.30483, 3.30483 )
 texture = ExtResource( 3 )
 
 [node name="midground" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.6, 1 )
+position = Vector2( -3504, -3927 )
+motion_scale = Vector2( 0.9, 1 )
 
 [node name="SeaCucumberKing1" type="Sprite" parent="ParallaxBackground/midground"]
 modulate = Color( 0.8, 0.8, 0.8, 1 )
-position = Vector2( 446, 1085 )
-scale = Vector2( 2.8053, 2.8053 )
+position = Vector2( 446, 1317 )
+scale = Vector2( 1.88446, 1.88446 )
 texture = ExtResource( 3 )
 
 [node name="foreground" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.3, 1 )
+position = Vector2( -3504, -3927 )
+motion_scale = Vector2( 0.7, 1 )
 
 [node name="SeaCucumberKing1" type="Sprite" parent="ParallaxBackground/foreground"]
 position = Vector2( 446, 1516 )
 texture = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 218, 788.5 )
+position = Vector2( -1534, -1175 )

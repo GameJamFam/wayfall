@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Levels/IsopodTown/isopod-maze.res" type="TileSet" id=1]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://NPC/all-character-sprites.sprites/SeaCucumber_King_1.tres" type="Texture" id=3]
 
 [node name="L_IsopodWay" type="Node2D"]
 scale = Vector2( 2, 2 )
@@ -10,3 +12,35 @@ tile_set = ExtResource( 1 )
 cell_size = Vector2( 512, 512 )
 format = 1
 tile_data = PoolIntArray( -131072, 3, 0, -131071, 4, 0, -131070, 32, 0, -131069, 29, 0, -131068, 0, 0, -7, 6, 0, -6, 38, 0, -5, 7, 0, -65536, 8, 0, -65535, 28, 0, -65534, 30, 0, -65533, 45, 0, -65532, 0, 0, 65525, 9, 0, 65526, 35, 0, 65527, 10, 0, 65528, 41, 0, 65529, 11, 0, 65530, 51, 0, 65531, 23, 0, 65532, 26, 0, 65533, 27, 0, 65534, 37, 0, 65535, 25, 0, 0, 12, 0, 1, 39, 0, 2, 24, 0, 3, 44, 0, 4, 0, 0, 131061, 14, 0, 131062, 46, 0, 131063, 33, 0, 131064, 50, 0, 131065, 16, 0, 131066, 43, 0, 131067, 31, 0, 131068, 36, 0, 131069, 22, 0, 131070, 47, 0, 131071, 48, 0, 65536, 17, 0, 65537, 40, 0, 65538, 18, 0, 65539, 19, 0, 65540, 0, 0, 196599, 49, 0, 196601, 42, 0, 262135, 20, 0, 262136, 34, 0, 262137, 21, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="background" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( -3504, -3927 )
+
+[node name="SeaCucumberKing1" type="Sprite" parent="ParallaxBackground/background"]
+modulate = Color( 0.4, 0.4, 0.4, 1 )
+position = Vector2( 432, 1009 )
+scale = Vector2( 3.30483, 3.30483 )
+texture = ExtResource( 3 )
+
+[node name="midground" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( -3504, -3927 )
+motion_scale = Vector2( 0.9, 1 )
+
+[node name="SeaCucumberKing1" type="Sprite" parent="ParallaxBackground/midground"]
+modulate = Color( 0.8, 0.8, 0.8, 1 )
+position = Vector2( 446, 1317 )
+scale = Vector2( 1.88446, 1.88446 )
+texture = ExtResource( 3 )
+
+[node name="foreground" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( -3504, -3927 )
+motion_scale = Vector2( 0.7, 1 )
+
+[node name="SeaCucumberKing1" type="Sprite" parent="ParallaxBackground/foreground"]
+position = Vector2( 446, 1516 )
+texture = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1534, -1175 )

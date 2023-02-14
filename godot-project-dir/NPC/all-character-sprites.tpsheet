@@ -222,14 +222,14 @@
 					"region": {
 						"x": 0,
 						"y": 718,
-						"w": 128,
-						"h": 119
+						"w": 127,
+						"h": 122
 					},
 					"margin": {
 						"x": 0,
-						"y": 7,
-						"w": 0,
-						"h": 9
+						"y": 3,
+						"w": 1,
+						"h": 6
 					}
 				},
 				{
@@ -250,7 +250,7 @@
 				{
 					"filename": "Isopod_Guard_1.PNG",
 					"region": {
-						"x": 128,
+						"x": 127,
 						"y": 723,
 						"w": 122,
 						"h": 121
@@ -263,24 +263,24 @@
 					}
 				},
 				{
-					"filename": "Osedax_2.PNG",
+					"filename": "Shrimp_Player_Dash.png",
 					"region": {
 						"x": 461,
 						"y": 597,
-						"w": 121,
-						"h": 128
+						"w": 124,
+						"h": 125
 					},
 					"margin": {
-						"x": 4,
-						"y": 0,
-						"w": 7,
-						"h": 0
+						"x": 0,
+						"y": 2,
+						"w": 4,
+						"h": 3
 					}
 				},
 				{
 					"filename": "Shrimp_Lace_1.PNG",
 					"region": {
-						"x": 582,
+						"x": 585,
 						"y": 597,
 						"w": 120,
 						"h": 225
@@ -293,9 +293,39 @@
 					}
 				},
 				{
+					"filename": "Shrimp_Jaques_1.PNG",
+					"region": {
+						"x": 461,
+						"y": 722,
+						"w": 112,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 6,
+						"w": 16,
+						"h": 15
+					}
+				},
+				{
+					"filename": "Osedax_2.PNG",
+					"region": {
+						"x": 705,
+						"y": 705,
+						"w": 121,
+						"h": 128
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 7,
+						"h": 0
+					}
+				},
+				{
 					"filename": "Shrimp_Grandpa_1.PNG",
 					"region": {
-						"x": 702,
+						"x": 826,
 						"y": 705,
 						"w": 120,
 						"h": 128
@@ -310,8 +340,8 @@
 				{
 					"filename": "Osedax_3.PNG",
 					"region": {
-						"x": 822,
-						"y": 705,
+						"x": 946,
+						"y": 716,
 						"w": 114,
 						"h": 127
 					},
@@ -321,21 +351,6 @@
 						"w": 14,
 						"h": 1
 					}
-				},
-				{
-					"filename": "Shrimp_Jaques_1.PNG",
-					"region": {
-						"x": 936,
-						"y": 716,
-						"w": 112,
-						"h": 113
-					},
-					"margin": {
-						"x": 5,
-						"y": 6,
-						"w": 16,
-						"h": 15
-					}
 				}
 			]
 		}
@@ -343,6 +358,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:9e51219ec505029c5f9f8855abeecf82:3bae551bf9dc243bd3b257b44d91366c:9d561e1a3d03c93582fcda5fd0a8a0fb$"
+		"smartupdate": "$TexturePacker:SmartUpdate:7d460491211c64e2659f52209534946a:6843cc1e509f07d9727af7c23f07951d:9d561e1a3d03c93582fcda5fd0a8a0fb$"
 	}
 }

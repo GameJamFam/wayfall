@@ -3,8 +3,8 @@
 		{
 			"image": "shrimp-town.png",
 			"size": {
-				"w": 1915,
-				"h": 1028
+				"w": 1866,
+				"h": 1542
 			},
 			"sprites": [
 				{
@@ -40,8 +40,8 @@
 				{
 					"filename": "shrimp-villiage-7.png",
 					"region": {
-						"x": 515,
-						"y": 1,
+						"x": 1,
+						"y": 1029,
 						"w": 512,
 						"h": 512
 					},
@@ -56,7 +56,7 @@
 					"filename": "shrimp-villiage-21.png",
 					"region": {
 						"x": 515,
-						"y": 515,
+						"y": 1,
 						"w": 512,
 						"h": 512
 					},
@@ -70,8 +70,8 @@
 				{
 					"filename": "shrimp-villiage-22.png",
 					"region": {
-						"x": 1029,
-						"y": 1,
+						"x": 515,
+						"y": 515,
 						"w": 512,
 						"h": 512
 					},
@@ -85,8 +85,8 @@
 				{
 					"filename": "shrimp-villiage-23.png",
 					"region": {
-						"x": 1029,
-						"y": 515,
+						"x": 515,
+						"y": 1029,
 						"w": 512,
 						"h": 512
 					},
@@ -98,9 +98,54 @@
 					}
 				},
 				{
+					"filename": "shrimp-interior-3.png",
+					"region": {
+						"x": 1029,
+						"y": 1,
+						"w": 465,
+						"h": 368
+					},
+					"margin": {
+						"x": 22,
+						"y": 52,
+						"w": 47,
+						"h": 144
+					}
+				},
+				{
+					"filename": "shrimp-interior-0.png",
+					"region": {
+						"x": 1029,
+						"y": 371,
+						"w": 465,
+						"h": 325
+					},
+					"margin": {
+						"x": 34,
+						"y": 77,
+						"w": 47,
+						"h": 187
+					}
+				},
+				{
+					"filename": "shrimp-interior-4.png",
+					"region": {
+						"x": 1029,
+						"y": 698,
+						"w": 465,
+						"h": 324
+					},
+					"margin": {
+						"x": 32,
+						"y": 70,
+						"w": 47,
+						"h": 188
+					}
+				},
+				{
 					"filename": "shrimp-villiage-12.png",
 					"region": {
-						"x": 1543,
+						"x": 1496,
 						"y": 1,
 						"w": 209,
 						"h": 512
@@ -115,8 +160,8 @@
 				{
 					"filename": "shrimp-villiage-17.png",
 					"region": {
-						"x": 1543,
-						"y": 515,
+						"x": 1029,
+						"y": 1024,
 						"w": 204,
 						"h": 512
 					},
@@ -130,8 +175,8 @@
 				{
 					"filename": "shrimp-villiage-11.png",
 					"region": {
-						"x": 1749,
-						"y": 515,
+						"x": 1235,
+						"y": 1024,
 						"w": 165,
 						"h": 512
 					},
@@ -145,7 +190,7 @@
 				{
 					"filename": "shrimp-villiage-16.png",
 					"region": {
-						"x": 1754,
+						"x": 1707,
 						"y": 1,
 						"w": 158,
 						"h": 512
@@ -156,6 +201,36 @@
 						"w": 354,
 						"h": 0
 					}
+				},
+				{
+					"filename": "shrimp-interior-1.png",
+					"region": {
+						"x": 1496,
+						"y": 515,
+						"w": 331,
+						"h": 324
+					},
+					"margin": {
+						"x": 78,
+						"y": 77,
+						"w": 181,
+						"h": 188
+					}
+				},
+				{
+					"filename": "shrimp-interior-2.png",
+					"region": {
+						"x": 1496,
+						"y": 841,
+						"w": 331,
+						"h": 324
+					},
+					"margin": {
+						"x": 115,
+						"y": 74,
+						"w": 181,
+						"h": 188
+					}
 				}
 			]
 		}
@@ -163,6 +238,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:5c3684d6a3fd178a3b92f29fec758e66:dbb5662ccb39439f96e536327a85c56e:0525a1ff94bee59fc99aefa18408166e$"
+		"smartupdate": "$TexturePacker:SmartUpdate:219e55424a5727ad6e8a12931baf56d3:eab86b8abaa6153090218c602c90db74:0525a1ff94bee59fc99aefa18408166e$"
 	}
 }

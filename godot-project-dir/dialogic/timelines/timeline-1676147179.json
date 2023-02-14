@@ -46,6 +46,16 @@
 			"text": "Great! Now get moving, my show's back from the ads."
 		},
 		{
+			"call_node": {
+				"arguments": [
+					"true"
+				],
+				"method_name": "set_input",
+				"target_node_path": "/Player"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		}
@@ -53,6 +63,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1676147179.json",
-		"name": "Gramps_init"
+		"name": "intro_cutscene"
 	}
 }

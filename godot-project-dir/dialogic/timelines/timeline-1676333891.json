@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1676337947.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, sorry! I didn't see you here...\n\nIn my home...\n\nHave you seen anyone with my silverware? I used to have some...\n\nMaybe it's in the shed...\n\nI could have sworn I had some at one point...\n\nOh dear, oh dear..."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676333891.json",
+		"name": "Lace_init"
+	}
+}

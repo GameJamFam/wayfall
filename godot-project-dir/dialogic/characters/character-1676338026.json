@@ -1,11 +1,11 @@
 {
 	"color": "#ffffffff",
 	"description": "",
-	"display_name": "Grandpa Shrimp",
-	"display_name_bool": true,
-	"id": "character-1676147186.json",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1676338026.json",
 	"mirror_portraits": false,
-	"name": "Gramps",
+	"name": "George",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -17,5 +17,5 @@
 		}
 	],
 	"scale": 100,
-	"theme": "theme-1676169443.cfg"
+	"theme": ""
 }

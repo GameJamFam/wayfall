@@ -1,7 +1,22 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Levels/ShrimpTown/shrimp-town.res" type="TileSet" id=1]
-[ext_resource path="res://NPC/all-character-sprites.sprites/Isopod_George_1.tres" type="Texture" id=2]
+[ext_resource path="res://NPC/TalkingNPCs/Shrimps/Jacques.tscn" type="PackedScene" id=2]
+[ext_resource path="res://NPC/TalkingNPCs/Shrimps/Lace.tscn" type="PackedScene" id=3]
+[ext_resource path="res://NPC/TalkingNPCs/Shrimps/Peony_Phylo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://NPC/TalkingNPCs/Shrimps/Gramps.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 229.125, 20.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32.5, 108 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 167, 38 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 31.75, 122 )
 
 [node name="L_ShrimpTown" type="Node2D"]
 
@@ -9,8 +24,116 @@
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 512, 512 )
 format = 1
-tile_data = PoolIntArray( -65537, 1, 0, -131072, 2, 0, -1, 8, 0, -65536, 6, 0, 65535, 9, 0, 0, 7, 0, 131070, 0, 0, 131071, 3, 0, 65536, 4, 0, 65537, 5, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0 )
+tile_data = PoolIntArray( -65537, 1, 0, -131072, 2, 0, -1, 8, 0, -65536, 6, 0, 65535, 9, 0, 0, 7, 0, 131069, 12, 0, 131070, 0, 0, 131071, 3, 0, 65536, 4, 0, 65537, 5, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 262142, 11, 0, 196608, 13, 0, 196610, 14, 0, 196612, 10, 0 )
 
-[node name="IsopodGeorge1" type="Sprite" parent="TileMap"]
-position = Vector2( -1609, -710 )
-texture = ExtResource( 2 )
+[node name="InteriorWalls" type="Node" parent="."]
+
+[node name="Jacques" type="StaticBody2D" parent="InteriorWalls"]
+position = Vector2( 2189, 1843 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="InteriorWalls/Jacques"]
+position = Vector2( -1678, -828 )
+build_mode = 1
+polygon = PoolVector2Array( 1562, 761, 1594, 681, 1654, 629, 1722, 611, 1783, 622, 1837, 658, 1870, 705, 1883, 758, 1901, 714, 1937, 702, 1977, 706, 2018, 753, 2021, 645, 1872, 608, 1732, 567, 1622, 574, 1553, 627, 1542, 696 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteriorWalls/Jacques"]
+position = Vector2( 118, 130 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteriorWalls/Jacques"]
+position = Vector2( 377, 0 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="InteriorWalls/Jacques"]
+position = Vector2( -146, 10 )
+shape = SubResource( 2 )
+
+[node name="Peony" type="StaticBody2D" parent="InteriorWalls"]
+position = Vector2( -1433, 826 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="InteriorWalls/Peony"]
+position = Vector2( -1631, -856 )
+build_mode = 1
+polygon = PoolVector2Array( 1562, 761, 1594, 681, 1654, 629, 1722, 611, 1783, 622, 1837, 658, 1870, 705, 1883, 758, 1901, 714, 1937, 702, 1977, 706, 2018, 753, 2021, 645, 1872, 608, 1732, 567, 1622, 574, 1553, 627, 1542, 696 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteriorWalls/Peony"]
+position = Vector2( 165, 96 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteriorWalls/Peony"]
+position = Vector2( 421, -39 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="InteriorWalls/Peony"]
+position = Vector2( -101, -33 )
+shape = SubResource( 2 )
+
+[node name="Gramps" type="StaticBody2D" parent="InteriorWalls"]
+position = Vector2( -653, 1855 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="InteriorWalls/Gramps"]
+position = Vector2( -1894, -856 )
+build_mode = 1
+polygon = PoolVector2Array( 1565, 761, 1584, 719, 1629, 696, 1671, 703, 1699, 755, 1726, 680, 1775, 631, 1866, 608, 1950, 638, 1994, 688, 2018, 751, 2021, 644, 1781, 564, 1541, 661 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteriorWalls/Gramps"]
+position = Vector2( -113, 103 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteriorWalls/Gramps"]
+position = Vector2( 154, -38 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="InteriorWalls/Gramps"]
+position = Vector2( -370, -35 )
+shape = SubResource( 2 )
+
+[node name="Lace" type="StaticBody2D" parent="InteriorWalls"]
+position = Vector2( 1387, 1838 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="InteriorWalls/Lace"]
+position = Vector2( -1383, -305 )
+polygon = PoolVector2Array( 1145, 211, 1173, 146, 1223, 98, 1301, 76, 1373, 92, 1422, 136, 1465, 213, 1465, 75, 1293, 16, 1119, 98 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteriorWalls/Lace"]
+position = Vector2( -79, 129 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteriorWalls/Lace"]
+position = Vector2( -275, -34 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="InteriorWalls/Lace"]
+position = Vector2( 116, -29 )
+shape = SubResource( 4 )
+
+[node name="Bookshelf" type="StaticBody2D" parent="InteriorWalls"]
+position = Vector2( 236, 1840 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="InteriorWalls/Bookshelf"]
+position = Vector2( -1295, -304 )
+polygon = PoolVector2Array( 1145, 211, 1173, 146, 1223, 98, 1316, 80, 1378, 95, 1422, 136, 1465, 213, 1465, 75, 1293, 16, 1119, 98 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteriorWalls/Bookshelf"]
+position = Vector2( 8, 127 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteriorWalls/Bookshelf"]
+position = Vector2( -182, -32 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="InteriorWalls/Bookshelf"]
+position = Vector2( 199, -28 )
+shape = SubResource( 4 )
+
+[node name="Gramps" parent="." instance=ExtResource( 5 )]
+position = Vector2( -867, 1843 )
+
+[node name="Jacques" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2431, 1838 )
+
+[node name="Lace" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1248, 1792 )
+
+[node name="Peony_Phylo" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1232, 814 )

@@ -1,31 +1,35 @@
 extends Node2D
-onready var dialogic_timeline_init = self.name + "_init"
-onready var dialogic_timeline_repeat = self.name + "_repeat"
+export (Array, String) var possible_timelines
 export (AudioStream) var interact_start_sound
 export (AudioStream) var airpod_sound
 
-onready var dialogic_timeline = dialogic_timeline_init
 var dialogue_playing = false
 var dialogue = null
 
 var player = null
 
+onready var rng = RandomNumberGenerator.new()
+func get_random_timeline():
+    rng.randomize()
+    return possible_timelines[rng.randi() % possible_timelines.size()]
+
 func airpod_interact():
-	pass
+    pass
 
 func _on_pressed_interact(airpod):  
-	if airpod:
-		airpod_interact()
-		return
-	if is_instance_valid(dialogue) or dialogic_timeline == "":
-		return
-	dialogue = Dialogic.start(dialogic_timeline)
-	dialogue_playing = true
-	add_child(dialogue)
-	player.set_input(false)
-	dialogic_timeline = dialogic_timeline_repeat
-	yield(dialogue, "timeline_end")
-	player.set_input(true)
+    if airpod:
+        airpod_interact()
+        return
+    if is_instance_valid(dialogue):
+        return
+    var dialogic_timeline = get_random_timeline()
+    dialogue = Dialogic.start(dialogic_timeline)
+    dialogue_playing = true
+    add_child(dialogue)
+    player.set_input(false)
+    dialogic_timeline = ""
+    yield(dialogue, "timeline_end")
+    player.set_input(true)
 
 
 func _on_InteractionSphere_body_exited(body:Node):

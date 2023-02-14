@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1676338063.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SWEET FISH LORD IN HEAVEN IT'S A GREAT DAY TO BE A CRAB AND NOT ANYTHING ELSE\n\nOH HEY, DIDN'T SEE OR CARE ABOUT YOU THERE"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676338190.json",
+		"name": "C3"
+	}
+}

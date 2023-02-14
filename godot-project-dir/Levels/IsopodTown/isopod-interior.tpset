@@ -1,0 +1,183 @@
+{
+	"textures": [
+		{
+			"image": "isopod-interior.png",
+			"size": {
+				"w": 2056,
+				"h": 1542
+			},
+			"sprites": [
+				{
+					"filename": "isopod-interior-0.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-1.png",
+					"region": {
+						"x": 1,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-3.png",
+					"region": {
+						"x": 1,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-4.png",
+					"region": {
+						"x": 515,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-6.png",
+					"region": {
+						"x": 515,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-7.png",
+					"region": {
+						"x": 515,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-9.png",
+					"region": {
+						"x": 1029,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-10.png",
+					"region": {
+						"x": 1029,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-12.png",
+					"region": {
+						"x": 1029,
+						"y": 1029,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-13.png",
+					"region": {
+						"x": 1543,
+						"y": 1,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "isopod-interior-14.png",
+					"region": {
+						"x": 1543,
+						"y": 515,
+						"w": 512,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:ab602ca119dc8903bcd6213f91a6939a:c409412b517b762f874e883791d6921b:bae61497046b9a76c2c274ca7247f8a1$"
+	}
+}

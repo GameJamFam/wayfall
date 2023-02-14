@@ -1,0 +1,93 @@
+{
+	"textures": [
+		{
+			"image": "shrimp-interior.png",
+			"size": {
+				"w": 467,
+				"h": 1675
+			},
+			"sprites": [
+				{
+					"filename": "shrimp-interior-3.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 465,
+						"h": 368
+					},
+					"margin": {
+						"x": 22,
+						"y": 52,
+						"w": 47,
+						"h": 144
+					}
+				},
+				{
+					"filename": "shrimp-interior-0.png",
+					"region": {
+						"x": 1,
+						"y": 371,
+						"w": 465,
+						"h": 325
+					},
+					"margin": {
+						"x": 34,
+						"y": 77,
+						"w": 47,
+						"h": 187
+					}
+				},
+				{
+					"filename": "shrimp-interior-4.png",
+					"region": {
+						"x": 1,
+						"y": 698,
+						"w": 465,
+						"h": 324
+					},
+					"margin": {
+						"x": 32,
+						"y": 70,
+						"w": 47,
+						"h": 188
+					}
+				},
+				{
+					"filename": "shrimp-interior-1.png",
+					"region": {
+						"x": 1,
+						"y": 1024,
+						"w": 331,
+						"h": 324
+					},
+					"margin": {
+						"x": 78,
+						"y": 77,
+						"w": 181,
+						"h": 188
+					}
+				},
+				{
+					"filename": "shrimp-interior-2.png",
+					"region": {
+						"x": 1,
+						"y": 1350,
+						"w": 331,
+						"h": 324
+					},
+					"margin": {
+						"x": 115,
+						"y": 74,
+						"w": 181,
+						"h": 188
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:bcea04e522810c3a56c181f69e600525:05483f3f1d4975f8b3b2d03643c84750:9b9507562c5fc2a5e2c3ed22a872525f$"
+	}
+}

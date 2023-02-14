@@ -1,10 +1,10 @@
 {
 	"events": [
 		{
-			"character": "",
+			"character": "character-1676337940.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ah, welcome traveller! You enter the dungeons of Ba'al Timor.\n\nWhat do you mean you haven't heard of it? Haven't you played the latest Demono game?\n\nOh my god, you haven't. What a dweeb! It's probably way over you're head. Here, let me explain it to you!"
+			"text": "Ah, welcome traveller! You enter the dungeons of Ba'al Timor.\n\nWhat do you mean you haven't heard of it? Haven't you played the latest Demono game?\n\nOh my god, you haven't. What a dweeb! It's probably way over your head. Here, let me explain it to you!"
 		},
 		{
 			"character": "",

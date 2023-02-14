@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://NPC/Enemy.gd" type="Script" id=1]
-[ext_resource path="res://NPC/Osedax/osedax.png" type="Texture" id=2]
+[ext_resource path="res://NPC/all-character-sprites.sprites/Osedax_2.tres" type="Texture" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 1.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]

@@ -1,12 +1,255 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=14 format=2]
 
+[ext_resource path="res://NPC/SeaCucumber/Cuke.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/CucumberPit/cuke-pits.res" type="TileSet" id=2]
+[ext_resource path="res://NPC/TalkingNPCs/Cucumbers/Queen_Cucumber.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player/Zoomout.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/CucumberPit/Bottom/2_BG_Black.PNG" type="Texture" id=5]
+[ext_resource path="res://Levels/CucumberPit/Bottom/3_BG.PNG" type="Texture" id=6]
+[ext_resource path="res://Levels/CucumberPit/Bottom/4_BG.PNG" type="Texture" id=7]
+[ext_resource path="res://Levels/CucumberPit/Bottom/5_BG.PNG" type="Texture" id=8]
+[ext_resource path="res://Levels/CucumberPit/Bottom/6_BG.PNG" type="Texture" id=9]
+[ext_resource path="res://Levels/CucumberPit/Bottom/7_W_CH.PNG" type="Texture" id=10]
+[ext_resource path="res://Levels/CucumberPit/Bottom/8_BG_Sand.PNG" type="Texture" id=11]
+[ext_resource path="res://Levels/CucumberPit/Bottom/1_BG.PNG" type="Texture" id=12]
+[ext_resource path="res://Levels/CucumberPit/Bottom/B_Edge.PNG" type="Texture" id=13]
 
 [node name="L_CucumberPit" type="Node2D"]
 scale = Vector2( 4, 4 )
+
+[node name="BG" type="Node2D" parent="."]
+position = Vector2( 545.75, 1377.5 )
+scale = Vector2( 0.55, 0.55 )
+
+[node name="1Bg" type="Sprite" parent="BG"]
+position = Vector2( -40.4545, 380.909 )
+scale = Vector2( 1, 1.735 )
+texture = ExtResource( 12 )
+
+[node name="2BgBlack" type="Sprite" parent="BG"]
+texture = ExtResource( 5 )
+
+[node name="3Bg" type="Sprite" parent="BG"]
+texture = ExtResource( 6 )
+
+[node name="4Bg" type="Sprite" parent="BG"]
+texture = ExtResource( 7 )
+
+[node name="5Bg" type="Sprite" parent="BG"]
+texture = ExtResource( 8 )
+
+[node name="6Bg" type="Sprite" parent="BG"]
+texture = ExtResource( 9 )
+
+[node name="7WCh" type="Sprite" parent="BG"]
+texture = ExtResource( 10 )
+
+[node name="8BgSand" type="Sprite" parent="BG"]
+texture = ExtResource( 11 )
+
+[node name="BEdge" type="Sprite" parent="BG"]
+texture = ExtResource( 13 )
+
+[node name="Zoomout" parent="." instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 490, 1603 )
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 512, 512 )
 format = 1
 tile_data = PoolIntArray( -196608, 1, 0, -196607, 2, 0, -131072, 3, 0, -131071, 4, 0, -131070, 5, 0, -65536, 6, 0, -65535, 10, 0, 65535, 11, 0, 0, 25, 0, 1, 24, 0, 2, 12, 0, 131071, 13, 0, 65536, 23, 0, 65537, 14, 0, 196607, 15, 0, 131072, 8, 0, 131073, 9, 0, 131074, 16, 0, 262142, 0, 0, 262143, 7, 0, 196610, 18, 0, 196611, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0 )
+
+[node name="CucumberNPCs" type="Node2D" parent="."]
+visible = false
+
+[node name="Cuke" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 368.25, -270 )
+
+[node name="Cuke2" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 247, -277.5 )
+
+[node name="Cuke3" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 290, -395.25 )
+
+[node name="Cuke4" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 627.75, 235.25 )
+
+[node name="Cuke5" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 694, 403.5 )
+
+[node name="Cuke6" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 886.5, 218.5 )
+
+[node name="Cuke7" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 561.75, 326 )
+
+[node name="Cuke8" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 839.25, -8.25 )
+
+[node name="Cuke9" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 295.75, -144.25 )
+
+[node name="Cuke10" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 480.5, -198.75 )
+
+[node name="Cuke11" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 846.75, 122 )
+
+[node name="Cuke12" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 746.75, 301.25 )
+
+[node name="Cuke13" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 659.75, -467 )
+
+[node name="Cuke50" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 813, -563.25 )
+
+[node name="Cuke51" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 838, -688 )
+
+[node name="Cuke52" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 645.5, -819.75 )
+
+[node name="Cuke53" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 588.5, -951.5 )
+rotation = -0.26931
+
+[node name="Cuke54" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 645.5, -342.25 )
+rotation = -0.26931
+
+[node name="Cuke14" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 503.25, 227.75 )
+
+[node name="Cuke15" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 731.5, -85.75 )
+
+[node name="Cuke16" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 946.75, 133.25 )
+
+[node name="Cuke17" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 729.75, 173 )
+
+[node name="Cuke18" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 871.25, 358 )
+
+[node name="Cuke19" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 676.75, 112.5 )
+
+[node name="Cuke20" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 607, -25.25 )
+
+[node name="Cuke21" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 520.25, 44.75 )
+
+[node name="Cuke22" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 531.5, 154 )
+
+[node name="Cuke23" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 120.75, 352.75 )
+
+[node name="Cuke24" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 286.75, 375.25 )
+
+[node name="Cuke25" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 87, 440.25 )
+
+[node name="Cuke26" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 280, 459.25 )
+rotation = -0.00754494
+
+[node name="Cuke27" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 447.25, 457 )
+rotation = -0.00754494
+
+[node name="Cuke28" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 484.25, 526.5 )
+rotation = -0.00754494
+
+[node name="Cuke29" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 294.5, 571.5 )
+rotation = -0.00754494
+
+[node name="Cuke30" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 163.25, 539 )
+rotation = -0.00754494
+
+[node name="Cuke31" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 37.5, 527.75 )
+rotation = -0.00754494
+
+[node name="Cuke32" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( -28.75, 617.5 )
+rotation = -0.00754494
+
+[node name="Cuke33" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 100.25, 662.5 )
+rotation = -0.00754494
+
+[node name="Cuke34" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 228.25, 643.5 )
+rotation = 0.0148019
+
+[node name="Cuke35" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 369.75, 633.5 )
+rotation = 0.0148019
+
+[node name="Cuke36" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 486.5, 602 )
+rotation = 0.0148019
+
+[node name="Cuke37" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 474.25, 693 )
+rotation = 0.0148019
+
+[node name="Cuke38" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 429, 765.5 )
+rotation = 0.0148019
+
+[node name="Cuke39" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 278, 715.5 )
+rotation = 0.0148019
+
+[node name="Cuke40" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 180.5, 806 )
+rotation = 0.0148019
+
+[node name="Cuke41" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 73.5, 747.75 )
+rotation = 0.0148019
+
+[node name="Cuke42" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( -41, 702.5 )
+rotation = 0.0148019
+
+[node name="Cuke43" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 13.75, 828.5 )
+rotation = 0.0148019
+
+[node name="Cuke44" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 120.75, 904.5 )
+rotation = 0.0148019
+
+[node name="Cuke45" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 270.5, 897.25 )
+rotation = 0.0148019
+
+[node name="Cuke46" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 400.25, 859 )
+rotation = 0.0148019
+
+[node name="Cuke47" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 400.25, 859 )
+rotation = 0.0148019
+
+[node name="Cuke48" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 254, 1083.5 )
+rotation = 0.0148019
+
+[node name="Cuke49" parent="CucumberNPCs" instance=ExtResource( 1 )]
+position = Vector2( 516.75, 1068.75 )
+rotation = 0.0335874
+
+[node name="Queen_Cucumber" parent="." instance=ExtResource( 3 )]
+position = Vector2( 530.5, 1806.5 )

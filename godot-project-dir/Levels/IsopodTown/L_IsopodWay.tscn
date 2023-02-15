@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Levels/IsopodTown/isopod-maze.res" type="TileSet" id=1]
 [ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 2/B_Edges.tres" type="Texture" id=2]
@@ -19,6 +19,12 @@
 [ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_CornerMeat_1.tres" type="Texture" id=17]
 [ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_CornerGoop.tres" type="Texture" id=18]
 [ext_resource path="res://Levels/DoorTeleport.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Map/MapToggler.tscn" type="PackedScene" id=20]
+[ext_resource path="res://NPC/TalkingNPCs/Isopods/Queen_Bathynomus.tscn" type="PackedScene" id=21]
+[ext_resource path="res://NPC/TalkingNPCs/Isopods/Shut_In.tscn" type="PackedScene" id=22]
+[ext_resource path="res://NPC/TalkingNPCs/Isopods/Hazel.tscn" type="PackedScene" id=23]
+[ext_resource path="res://NPC/TalkingNPCs/Isopods/George.tscn" type="PackedScene" id=24]
+[ext_resource path="res://NPC/TalkingNPCs/Misc/Munice_SquatLobster.tscn" type="PackedScene" id=25]
 
 [node name="L_IsopodWay" type="Node2D"]
 scale = Vector2( 2, 2 )
@@ -37,14 +43,6 @@ texture = ExtResource( 6 )
 [node name="BEdge" type="Sprite" parent="Background/Section1"]
 position = Vector2( -3657.5, 1232.5 )
 texture = ExtResource( 7 )
-
-[node name="Section2" type="Node2D" parent="Background"]
-position = Vector2( -740, 480 )
-scale = Vector2( 1.13, 1.13 )
-
-[node name="BEdges" type="Sprite" parent="Background/Section2"]
-position = Vector2( 1414.5, -568 )
-texture = ExtResource( 2 )
 
 [node name="Section3" type="Node2D" parent="Background"]
 position = Vector2( -637, -262 )
@@ -87,6 +85,14 @@ position = Vector2( -3367.5, 1420 )
 rotation = 1.60504
 scale = Vector2( 1.78366, 1.78366 )
 texture = ExtResource( 16 )
+
+[node name="Section2" type="Node2D" parent="Background"]
+position = Vector2( -740, 480 )
+scale = Vector2( 1.13, 1.13 )
+
+[node name="BEdges" type="Sprite" parent="Background/Section2"]
+position = Vector2( 1414.5, -568 )
+texture = ExtResource( 2 )
 
 [node name="Section6" type="Node2D" parent="Background"]
 position = Vector2( 487, -397 )
@@ -149,23 +155,29 @@ tile_data = PoolIntArray( -131072, 3, 0, -131071, 4, 0, -131070, 32, 0, -131069,
 
 [node name="TallRoom_from" parent="InteriorDoors" instance=ExtResource( 19 )]
 position = Vector2( -5908, 2786.5 )
+teleport_to = Vector2( -3890, 1734.5 )
 
 [node name="LongRoom_from" parent="InteriorDoors" instance=ExtResource( 19 )]
 position = Vector2( -4405, 2849 )
+teleport_to = Vector2( -4307, 1708 )
 
 [node name="ShortRoom_from" parent="InteriorDoors" instance=ExtResource( 19 )]
 position = Vector2( -1765, 2362.5 )
+teleport_to = Vector2( -3511, 1661 )
 
 [node name="ExteriorDoors" type="Node2D" parent="."]
 
 [node name="LongRoom_to" parent="ExteriorDoors" instance=ExtResource( 19 )]
 position = Vector2( -4307, 1708 )
+teleport_to = Vector2( -4405, 2849 )
 
 [node name="TallRoom_to" parent="ExteriorDoors" instance=ExtResource( 19 )]
 position = Vector2( -3890, 1734.5 )
+teleport_to = Vector2( -5908, 2786.5 )
 
 [node name="ShortRoom_to" parent="ExteriorDoors" instance=ExtResource( 19 )]
 position = Vector2( -3511, 1661 )
+teleport_to = Vector2( -1765, 2362.5 )
 
 [node name="TallRoom" type="Node2D" parent="."]
 position = Vector2( 1538, -538 )
@@ -190,3 +202,22 @@ scale = Vector2( 1.158, 1.158 )
 [node name="IsopodInterior-3Png" type="Sprite" parent="LongRoom"]
 position = Vector2( -3764.5, 2886.5 )
 texture = ExtResource( 11 )
+
+[node name="MapToggler" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1673.5, -789 )
+scale = Vector2( 1.158, 1.158 )
+
+[node name="Queen_Bathynomus" parent="MapToggler" instance=ExtResource( 21 )]
+position = Vector2( -6587.65, 2008.2 )
+
+[node name="Shut_In" parent="MapToggler" instance=ExtResource( 22 )]
+position = Vector2( -3025.91, 1913.64 )
+
+[node name="George" parent="MapToggler/Shut_In" instance=ExtResource( 24 )]
+position = Vector2( -1993.52, 1245.25 )
+
+[node name="Hazel" parent="MapToggler/Shut_In" instance=ExtResource( 23 )]
+position = Vector2( -1501.73, 1201.21 )
+
+[node name="Munice_SquatLobster" parent="MapToggler/Shut_In" instance=ExtResource( 25 )]
+position = Vector2( -585.924, -1006.48 )

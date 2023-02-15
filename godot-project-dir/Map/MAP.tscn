@@ -29,21 +29,25 @@ margin_left = 18.0
 margin_top = 297.0
 margin_right = 83.0
 margin_bottom = 361.0
+travel_to = Vector2( 1500, -9000 )
 
 [node name="CukeJump" parent="ClickableLocs" instance=ExtResource( 1 )]
 margin_left = 363.0
 margin_top = 260.0
 margin_right = 428.0
 margin_bottom = 324.0
+travel_to = Vector2( 8850, -7600 )
 
 [node name="ShrimpJump" parent="ClickableLocs" instance=ExtResource( 1 )]
 margin_left = 620.0
 margin_top = 281.0
 margin_right = 685.0
 margin_bottom = 345.0
+travel_to = Vector2( 0, 750 )
 
 [node name="Crabjump" parent="ClickableLocs" instance=ExtResource( 1 )]
 margin_left = 797.0
 margin_top = 281.0
 margin_right = 862.0
 margin_bottom = 345.0
+travel_to = Vector2( -11000, 7500 )

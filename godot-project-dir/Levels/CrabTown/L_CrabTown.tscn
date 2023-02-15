@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Levels/CrabTown/crabtown.res" type="TileSet" id=1]
 [ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/B_SoftEdge.tres" type="Texture" id=2]
@@ -26,6 +26,8 @@
 [ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/6_B_BG.tres" type="Texture" id=24]
 [ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/4_Baleen.tres" type="Texture" id=25]
 [ext_resource path="res://Levels/DoorTeleport.tscn" type="PackedScene" id=26]
+[ext_resource path="res://NPC/TalkingNPCs/Crabs/King_Rathbuni.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Map/MapToggler.tscn" type="PackedScene" id=28]
 
 [sub_resource type="Shader" id=1]
 code = "/*
@@ -308,6 +310,12 @@ texture = ExtResource( 17 )
 [node name="BEdge-4" type="Sprite" parent="Backlground/Room4"]
 position = Vector2( 1826.86, -185.121 )
 texture = ExtResource( 23 )
+
+[node name="King_Rathbuni" parent="Backlground" instance=ExtResource( 27 )]
+position = Vector2( 645.411, -177.971 )
+
+[node name="MapToggler" parent="Backlground" instance=ExtResource( 28 )]
+position = Vector2( 47.343, 190.725 )
 
 [node name="godrays" type="ColorRect" parent="."]
 visible = false

@@ -9,7 +9,7 @@
 [ext_resource path="res://Audio/BGM/WayfallTitle.ogg" type="AudioStream" id=7]
 [ext_resource path="res://Audio/BGM/IsopodPod.ogg" type="AudioStream" id=8]
 [ext_resource path="res://Title/Title.tscn" type="PackedScene" id=9]
-[ext_resource path="res://TestScene.tscn" type="PackedScene" id=10]
+[ext_resource path="res://MainLevels.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Audio/BGM/Shrimp Party_1.ogg" type="AudioStream" id=11]
 [ext_resource path="res://Title/Title.gd" type="Script" id=12]
 

@@ -2,7 +2,7 @@ name: "godot-ci export"
 on:
   pull_request:
     branches:
-    - master
+    - main
     
 env:
   GODOT_VERSION: 3.5.1

@@ -17,41 +17,102 @@
 [node name="L_CucumberPit" type="Node2D"]
 scale = Vector2( 4, 4 )
 
+[node name="BottomEx" type="ParallaxBackground" parent="."]
+visible = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="1Bg" type="Sprite" parent="BottomEx/ParallaxLayer"]
+position = Vector2( 2094, 6348 )
+scale = Vector2( 2.2, 3.817 )
+texture = ExtResource( 12 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="2BgBlack" type="Sprite" parent="BottomEx/ParallaxLayer2"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="3Bg" type="Sprite" parent="BottomEx/ParallaxLayer3"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 6 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="4Bg" type="Sprite" parent="BottomEx/ParallaxLayer4"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 7 )
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="5Bg" type="Sprite" parent="BottomEx/ParallaxLayer5"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 8 )
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="6Bg" type="Sprite" parent="BottomEx/ParallaxLayer6"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 9 )
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="7WCh" type="Sprite" parent="BottomEx/ParallaxLayer7"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 10 )
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="BottomEx"]
+
+[node name="8BgSand" type="Sprite" parent="BottomEx/ParallaxLayer8"]
+position = Vector2( 2183, 5510 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 11 )
+
 [node name="BG" type="Node2D" parent="."]
 position = Vector2( 545.75, 1377.5 )
 scale = Vector2( 0.55, 0.55 )
 
-[node name="1Bg" type="Sprite" parent="BG"]
+[node name="Bottom" type="Node2D" parent="BG"]
+
+[node name="1Bg" type="Sprite" parent="BG/Bottom"]
 position = Vector2( -40.4545, 380.909 )
 scale = Vector2( 1, 1.735 )
 texture = ExtResource( 12 )
 
-[node name="2BgBlack" type="Sprite" parent="BG"]
+[node name="2BgBlack" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 5 )
 
-[node name="3Bg" type="Sprite" parent="BG"]
+[node name="3Bg" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 6 )
 
-[node name="4Bg" type="Sprite" parent="BG"]
+[node name="4Bg" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 7 )
 
-[node name="5Bg" type="Sprite" parent="BG"]
+[node name="5Bg" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 8 )
 
-[node name="6Bg" type="Sprite" parent="BG"]
+[node name="6Bg" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 9 )
 
-[node name="7WCh" type="Sprite" parent="BG"]
+[node name="7WCh" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 10 )
 
-[node name="8BgSand" type="Sprite" parent="BG"]
+[node name="8BgSand" type="Sprite" parent="BG/Bottom"]
 texture = ExtResource( 11 )
 
-[node name="BEdge" type="Sprite" parent="BG"]
+[node name="BEdge" type="Sprite" parent="BG/Bottom"]
+z_index = 10
 texture = ExtResource( 13 )
 
 [node name="Zoomout" parent="." instance=ExtResource( 4 )]
-visible = false
 position = Vector2( 490, 1603 )
 
 [node name="TileMap2" type="TileMap" parent="."]
@@ -61,7 +122,6 @@ format = 1
 tile_data = PoolIntArray( -196608, 1, 0, -196607, 2, 0, -131072, 3, 0, -131071, 4, 0, -131070, 5, 0, -65536, 6, 0, -65535, 10, 0, 65535, 11, 0, 0, 25, 0, 1, 24, 0, 2, 12, 0, 131071, 13, 0, 65536, 23, 0, 65537, 14, 0, 196607, 15, 0, 131072, 8, 0, 131073, 9, 0, 131074, 16, 0, 262142, 0, 0, 262143, 7, 0, 196610, 18, 0, 196611, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0 )
 
 [node name="CucumberNPCs" type="Node2D" parent="."]
-visible = false
 
 [node name="Cuke" parent="CucumberNPCs" instance=ExtResource( 1 )]
 position = Vector2( 368.25, -270 )

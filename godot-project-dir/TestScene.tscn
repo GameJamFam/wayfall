@@ -20,13 +20,13 @@ position = Vector2( 12, -7 )
 position = Vector2( -4998, -6331 )
 
 [node name="L_CucumberPit" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4115, 1981 )
+position = Vector2( 14401, -299 )
 
 [node name="L_CrabTown" parent="." instance=ExtResource( 3 )]
 position = Vector2( -3053, 929 )
 
 [node name="Player" parent="." instance=ExtResource( 7 )]
-position = Vector2( -64, 770 )
+position = Vector2( 38, 825 )
 speed = Vector2( 250, 200 )
 
 [node name="Airpod" parent="." instance=ExtResource( 10 )]

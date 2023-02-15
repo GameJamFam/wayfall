@@ -17,65 +17,6 @@
 [node name="L_CucumberPit" type="Node2D"]
 scale = Vector2( 4, 4 )
 
-[node name="BottomEx" type="ParallaxBackground" parent="."]
-visible = false
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="1Bg" type="Sprite" parent="BottomEx/ParallaxLayer"]
-position = Vector2( 2094, 6348 )
-scale = Vector2( 2.2, 3.817 )
-texture = ExtResource( 12 )
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="2BgBlack" type="Sprite" parent="BottomEx/ParallaxLayer2"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 5 )
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="3Bg" type="Sprite" parent="BottomEx/ParallaxLayer3"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 6 )
-
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="4Bg" type="Sprite" parent="BottomEx/ParallaxLayer4"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 7 )
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="5Bg" type="Sprite" parent="BottomEx/ParallaxLayer5"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 8 )
-
-[node name="ParallaxLayer6" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="6Bg" type="Sprite" parent="BottomEx/ParallaxLayer6"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 9 )
-
-[node name="ParallaxLayer7" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="7WCh" type="Sprite" parent="BottomEx/ParallaxLayer7"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 10 )
-
-[node name="ParallaxLayer8" type="ParallaxLayer" parent="BottomEx"]
-
-[node name="8BgSand" type="Sprite" parent="BottomEx/ParallaxLayer8"]
-position = Vector2( 2183, 5510 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 11 )
-
 [node name="BG" type="Node2D" parent="."]
 position = Vector2( 545.75, 1377.5 )
 scale = Vector2( 0.55, 0.55 )

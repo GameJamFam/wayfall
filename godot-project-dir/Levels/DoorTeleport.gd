@@ -19,6 +19,8 @@ func _on_Door_body_exited(body:Node):
 	if body.name == "Player":
 		body.get_node("Interactor").disconnect("pressed_interact", self, "_on_pressed_interact")
 		if player.teleporting:
-			yield(get_tree().create_timer(1), "timeout")
+			yield(get_tree().create_timer(0.2), "timeout")
 			player.teleporting = false
-		player = null
+			player = null
+
+			

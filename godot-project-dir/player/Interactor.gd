@@ -1,4 +1,4 @@
-extends CollisionShape2D
+extends Node
 
 signal pressed_interact(airpod)
 

@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1676338026.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh? What? Who is that?\n\nHazel, is that you? My god, Hazel, time has done a number on you! Why are there so many arms on your face?\n\nWait, you're not my Hazel! Get away!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676334100.json",
+		"name": "George_init"
+	}
+}

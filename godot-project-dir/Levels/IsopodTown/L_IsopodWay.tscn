@@ -1,12 +1,192 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Levels/IsopodTown/isopod-maze.res" type="TileSet" id=1]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 2/B_Edges.tres" type="Texture" id=2]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 4/B_Edge.tres" type="Texture" id=3]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 3/B_Edge.tres" type="Texture" id=4]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 5/B_Edge.tres" type="Texture" id=5]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 1/BG_Enter.tres" type="Texture" id=6]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 1/B_Edge.tres" type="Texture" id=7]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 7/B_Edge.tres" type="Texture" id=8]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 6 (Village)/IsopodVillage_Exterior.tres" type="Texture" id=9]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Section 6 (Village)/B_Edge.tres" type="Texture" id=10]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Village/Isopod_Interior.-3png.tres" type="Texture" id=11]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Village/Isopod_Interior-1.tres" type="Texture" id=12]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Village/Isopod_Interior-2.tres" type="Texture" id=13]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_WhitePuffs.tres" type="Texture" id=14]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_W_CH.tres" type="Texture" id=15]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_EdgeGoop.tres" type="Texture" id=16]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_CornerMeat_1.tres" type="Texture" id=17]
+[ext_resource path="res://Levels/IsopodTown/isopod-maze-background.sprites/Pieces/BG_CornerGoop.tres" type="Texture" id=18]
+[ext_resource path="res://Levels/DoorTeleport.tscn" type="PackedScene" id=19]
 
 [node name="L_IsopodWay" type="Node2D"]
 scale = Vector2( 2, 2 )
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Section1" type="Node2D" parent="Background"]
+position = Vector2( 5761, -1254.5 )
+scale = Vector2( 1.12, 1.12 )
+
+[node name="BgEnter" type="Sprite" parent="Background/Section1"]
+position = Vector2( -3568.75, 439.286 )
+scale = Vector2( 0.249371, 0.249371 )
+texture = ExtResource( 6 )
+
+[node name="BEdge" type="Sprite" parent="Background/Section1"]
+position = Vector2( -3657.5, 1232.5 )
+texture = ExtResource( 7 )
+
+[node name="Section2" type="Node2D" parent="Background"]
+position = Vector2( -740, 480 )
+scale = Vector2( 1.13, 1.13 )
+
+[node name="BEdges" type="Sprite" parent="Background/Section2"]
+position = Vector2( 1414.5, -568 )
+texture = ExtResource( 2 )
+
+[node name="Section3" type="Node2D" parent="Background"]
+position = Vector2( -637, -262 )
+scale = Vector2( 1.13, 1.13 )
+
+[node name="BEdge" type="Sprite" parent="Background/Section3"]
+position = Vector2( 217.5, 242.5 )
+texture = ExtResource( 4 )
+
+[node name="Section4" type="Node2D" parent="Background"]
+position = Vector2( -216.5, 1086.5 )
+scale = Vector2( 1.9, 1.9 )
+
+[node name="BEdge" type="Sprite" parent="Background/Section4"]
+position = Vector2( -1039.5, -296.5 )
+texture = ExtResource( 3 )
+
+[node name="Section5" type="Node2D" parent="Background"]
+position = Vector2( 964.5, -1209 )
+
+[node name="BgCornerMeat1" type="Sprite" parent="Background/Section5"]
+position = Vector2( -3386, 1435 )
+texture = ExtResource( 17 )
+
+[node name="BEdge" type="Sprite" parent="Background/Section5"]
+position = Vector2( -3815, 1228.5 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 5 )
+
+[node name="BgEdgeGoop" type="Sprite" parent="Background/Section5"]
+position = Vector2( -3332.5, 1395 )
+texture = ExtResource( 16 )
+
+[node name="BgCornerGoop" type="Sprite" parent="Background/Section5"]
+position = Vector2( -3354.5, 1473.5 )
+texture = ExtResource( 18 )
+
+[node name="BgEdgeGoop2" type="Sprite" parent="Background/Section5"]
+position = Vector2( -3367.5, 1420 )
+rotation = 1.60504
+scale = Vector2( 1.78366, 1.78366 )
+texture = ExtResource( 16 )
+
+[node name="Section6" type="Node2D" parent="Background"]
+position = Vector2( 487, -397 )
+scale = Vector2( 1.15, 1.15 )
+
+[node name="BEdge" type="Sprite" parent="Background/Section6"]
+position = Vector2( -3813, 1267 )
+texture = ExtResource( 10 )
+
+[node name="IsopodVillageExterior" type="Sprite" parent="Background/Section6"]
+position = Vector2( -3813, 1267 )
+texture = ExtResource( 9 )
+
+[node name="Section7" type="Node2D" parent="Background"]
+position = Vector2( 631.5, -677 )
+scale = Vector2( 1.1, 1.1 )
+
+[node name="BEdge" type="Sprite" parent="Background/Section7"]
+position = Vector2( -5080.5, 978.5 )
+texture = ExtResource( 8 )
+
+[node name="BgWhitePuffs" type="Sprite" parent="Background"]
+position = Vector2( -3976, 500 )
+texture = ExtResource( 14 )
+offset = Vector2( -986, 574.5 )
+
+[node name="BgWhitePuffs2" type="Sprite" parent="Background"]
+position = Vector2( -4657.5, 688 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 14 )
+offset = Vector2( -986, 574.5 )
+
+[node name="BgWhitePuffs3" type="Sprite" parent="Background"]
+position = Vector2( -1404, 692 )
+texture = ExtResource( 14 )
+offset = Vector2( -986, 574.5 )
+
+[node name="BgWhitePuffs4" type="Sprite" parent="Background"]
+position = Vector2( -2091, 693.5 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 14 )
+offset = Vector2( -986, 574.5 )
+
+[node name="BgWhitePuffs5" type="Sprite" parent="Background"]
+position = Vector2( 1168, 695.5 )
+texture = ExtResource( 14 )
+offset = Vector2( -986, 574.5 )
+
+[node name="BgWCh" type="Sprite" parent="Background/BgWhitePuffs5"]
+position = Vector2( -3759.5, 1217.5 )
+texture = ExtResource( 15 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 512, 512 )
 format = 1
-tile_data = PoolIntArray( -131072, 3, 0, -131071, 4, 0, -131070, 32, 0, -131069, 29, 0, -131068, 0, 0, -7, 6, 0, -6, 38, 0, -5, 7, 0, -65536, 8, 0, -65535, 28, 0, -65534, 30, 0, -65533, 45, 0, -65532, 0, 0, 65525, 9, 0, 65526, 35, 0, 65527, 10, 0, 65528, 41, 0, 65529, 11, 0, 65530, 51, 0, 65531, 23, 0, 65532, 26, 0, 65533, 27, 0, 65534, 37, 0, 65535, 25, 0, 0, 12, 0, 1, 39, 0, 2, 24, 0, 3, 44, 0, 4, 0, 0, 131061, 14, 0, 131062, 46, 0, 131063, 33, 0, 131064, 50, 0, 131065, 16, 0, 131066, 43, 0, 131067, 31, 0, 131068, 36, 0, 131069, 22, 0, 131070, 47, 0, 131071, 48, 0, 65536, 17, 0, 65537, 40, 0, 65538, 18, 0, 65539, 19, 0, 65540, 0, 0, 196599, 49, 0, 196601, 42, 0, 262135, 20, 0, 262136, 34, 0, 262137, 21, 0 )
+tile_data = PoolIntArray( -131072, 3, 0, -131071, 4, 0, -131070, 32, 0, -131069, 29, 0, -131068, 0, 0, -7, 6, 0, -6, 38, 0, -5, 7, 0, -65536, 8, 0, -65535, 28, 0, -65534, 30, 0, -65533, 45, 0, -65532, 0, 0, 65525, 9, 0, 65526, 35, 0, 65527, 10, 0, 65528, 41, 0, 65529, 11, 0, 65530, 51, 0, 65531, 23, 0, 65532, 26, 0, 65533, 27, 0, 65534, 37, 0, 65535, 25, 0, 0, 12, 0, 1, 39, 0, 2, 24, 0, 3, 44, 0, 4, 0, 0, 131061, 14, 0, 131062, 46, 0, 131063, 33, 0, 131064, 50, 0, 131065, 16, 0, 131066, 43, 0, 131067, 31, 0, 131068, 36, 0, 131069, 22, 0, 131070, 47, 0, 131071, 48, 0, 65536, 17, 0, 65537, 40, 0, 65538, 18, 0, 65539, 19, 0, 65540, 0, 0, 196596, 52, 0, 196599, 49, 0, 196601, 42, 0, 196604, 55, 0, 262132, 54, 0, 262135, 20, 0, 262136, 34, 0, 262137, 21, 0, 262140, 57, 0, 327668, 56, 0, 327676, 59, 0, 393204, 58, 0, 393207, 60, 0, 393208, 61, 0, 393209, 62, 0 )
+
+[node name="InteriorDoors" type="Node2D" parent="."]
+
+[node name="TallRoom_from" parent="InteriorDoors" instance=ExtResource( 19 )]
+position = Vector2( -5908, 2786.5 )
+
+[node name="LongRoom_from" parent="InteriorDoors" instance=ExtResource( 19 )]
+position = Vector2( -4405, 2849 )
+
+[node name="ShortRoom_from" parent="InteriorDoors" instance=ExtResource( 19 )]
+position = Vector2( -1765, 2362.5 )
+
+[node name="ExteriorDoors" type="Node2D" parent="."]
+
+[node name="LongRoom_to" parent="ExteriorDoors" instance=ExtResource( 19 )]
+position = Vector2( -4307, 1708 )
+
+[node name="TallRoom_to" parent="ExteriorDoors" instance=ExtResource( 19 )]
+position = Vector2( -3890, 1734.5 )
+
+[node name="ShortRoom_to" parent="ExteriorDoors" instance=ExtResource( 19 )]
+position = Vector2( -3511, 1661 )
+
+[node name="TallRoom" type="Node2D" parent="."]
+position = Vector2( 1538, -538 )
+scale = Vector2( 1.158, 1.158 )
+
+[node name="IsopodInterior-1" type="Sprite" parent="TallRoom"]
+position = Vector2( -6468.5, 2321 )
+texture = ExtResource( 12 )
+
+[node name="ShortRoom" type="Node2D" parent="."]
+position = Vector2( 743.5, -318.5 )
+scale = Vector2( 1.158, 1.158 )
+
+[node name="IsopodInterior-2" type="Sprite" parent="ShortRoom"]
+position = Vector2( -2155.5, 1922.5 )
+texture = ExtResource( 13 )
+
+[node name="LongRoom" type="Node2D" parent="."]
+position = Vector2( 391.5, -544 )
+scale = Vector2( 1.158, 1.158 )
+
+[node name="IsopodInterior-3Png" type="Sprite" parent="LongRoom"]
+position = Vector2( -3764.5, 2886.5 )
+texture = ExtResource( 11 )

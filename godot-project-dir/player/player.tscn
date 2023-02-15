@@ -1,13 +1,16 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://player/player-real.png" type="Texture" id=1]
 [ext_resource path="res://player/movement.gd" type="Script" id=2]
 [ext_resource path="res://player/Interactor.gd" type="Script" id=3]
 [ext_resource path="res://player/Inventory.gd" type="Script" id=4]
 [ext_resource path="res://player/Lives.gd" type="Script" id=5]
-[ext_resource path="res://Inventory/Items/airpod.png" type="Texture" id=6]
-[ext_resource path="res://Inventory/Items/battery-icon.png" type="Texture" id=7]
-[ext_resource path="res://Inventory/Items/chip.png" type="Texture" id=8]
+[ext_resource path="res://Inventory/Items/Item_Clamp.PNG" type="Texture" id=6]
+[ext_resource path="res://Inventory/Items/Item_Antenna.PNG" type="Texture" id=7]
+[ext_resource path="res://Inventory/Items/Item_Battery.PNG" type="Texture" id=8]
+[ext_resource path="res://NPC/all-character-sprites.sprites/Shrimp_Player_Dash.tres" type="Texture" id=9]
+[ext_resource path="res://Map/MAP.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Inventory/Items/Item_Airpod.PNG" type="Texture" id=11]
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 27.6861
@@ -15,6 +18,11 @@ height = 82.2164
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "dash",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "default",
@@ -84,22 +92,39 @@ tracks/0/keys = {
 
 [sub_resource type="RectangleShape2D" id=3]
 
+[sub_resource type="Animation" id=9]
+resource_name = "Bob"
+length = 2.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -10 ), Vector2( 0, 0 ) ]
+}
+
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( -2, 0 )
+position = Vector2( 0, -3.81514 )
 script = ExtResource( 2 )
-speed = Vector2( 280, 50 )
+speed = Vector2( 250, 150 )
 gravity = 5.0
-acceleration = 15
-boost_amt = 300
+acceleration = 70
+boost_amt = 500
 bob_velocity = -5
-bob_timeout = 1.0
+bob_timeout = 5.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 0.575959
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 1, 0 )
+position = Vector2( 0, -2.24744 )
 frames = SubResource( 1 )
 
 [node name="Camera" type="Camera2D" parent="."]
@@ -150,34 +175,45 @@ anims/RESET = SubResource( 7 )
 margin_top = 568.0
 margin_right = 1024.0
 margin_bottom = 600.0
+rect_scale = Vector2( 0.25, 0.25 )
 script = ExtResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="Camera/Canvas/Inventory"]
 margin_right = 1024.0
-margin_bottom = 32.0
+margin_bottom = 128.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Camera/Canvas/Inventory"]
 margin_right = 1024.0
-margin_bottom = 32.0
+margin_bottom = 128.0
 
 [node name="Airpod" type="TextureRect" parent="Camera/Canvas/Inventory/HBoxContainer"]
-margin_right = 32.0
-margin_bottom = 32.0
-texture = ExtResource( 6 )
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 11 )
 
 [node name="Battery" type="TextureRect" parent="Camera/Canvas/Inventory/HBoxContainer"]
-margin_left = 36.0
-margin_right = 68.0
-margin_bottom = 32.0
+margin_left = 132.0
+margin_right = 260.0
+margin_bottom = 128.0
+texture = ExtResource( 8 )
+
+[node name="Claw" type="TextureRect" parent="Camera/Canvas/Inventory/HBoxContainer"]
+margin_left = 264.0
+margin_right = 392.0
+margin_bottom = 128.0
+hint_tooltip = "Execute Protocol S4LS4"
+texture = ExtResource( 6 )
+
+[node name="Antenna" type="TextureRect" parent="Camera/Canvas/Inventory/HBoxContainer"]
+margin_left = 396.0
+margin_right = 524.0
+margin_bottom = 128.0
+hint_tooltip = "Execute Protocol S4LS4"
 texture = ExtResource( 7 )
 
-[node name="Chip" type="TextureRect" parent="Camera/Canvas/Inventory/HBoxContainer"]
-margin_left = 72.0
-margin_right = 104.0
-margin_bottom = 32.0
-hint_tooltip = "Execute Protocol S4LS4"
-texture = ExtResource( 8 )
+[node name="MAP" parent="Camera/Canvas" instance=ExtResource( 10 )]
+visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
 anims/Zoom = SubResource( 8 )
@@ -185,3 +221,6 @@ anims/Zoom = SubResource( 8 )
 [node name="Interactor" type="CollisionShape2D" parent="."]
 shape = SubResource( 3 )
 script = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Bob = SubResource( 9 )

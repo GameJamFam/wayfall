@@ -1,0 +1,9 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=2]
+
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.png" type="Texture" id=1]
+
+[resource]
+flags = 7
+atlas = ExtResource( 1 )
+region = Rect2( 3140, 6377, 747, 243 )
+margin = Rect2( 308, 30, 362, 248 )

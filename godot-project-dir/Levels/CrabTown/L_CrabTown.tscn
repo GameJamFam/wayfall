@@ -1,4 +1,31 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Levels/CrabTown/crabtown.res" type="TileSet" id=1]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/B_SoftEdge.tres" type="Texture" id=2]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/Entrance.tres" type="Texture" id=3]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/1_BG.tres" type="Texture" id=4]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/6_W_CH.tres" type="Texture" id=5]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/2_BlackOverlay.tres" type="Texture" id=6]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/4_BoneBG_Mid.tres" type="Texture" id=7]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/3_BoneBG_Far.tres" type="Texture" id=8]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 1 (Intro)/5_BoneBG_Close.tres" type="Texture" id=9]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 2 (Shark)/B_Edge.tres" type="Texture" id=10]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 3 (Small Dome)/B_Edge.tres" type="Texture" id=11]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 2 (Shark)/3_eyes.tres" type="Texture" id=12]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 2 (Shark)/5_W_ring.tres" type="Texture" id=13]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 2 (Shark)/1_W_CH.tres" type="Texture" id=14]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 2 (Shark)/4_B_CH.tres" type="Texture" id=15]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 2 (Shark)/2_W.tres" type="Texture" id=16]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/8_Skull.tres" type="Texture" id=17]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/1_Bone.tres" type="Texture" id=18]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/2_Baleen.tres" type="Texture" id=19]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/7_UpperSand.tres" type="Texture" id=20]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/3_Baleen.tres" type="Texture" id=21]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/5_W_CH.tres" type="Texture" id=22]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/B_Edge-4.tres" type="Texture" id=23]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/6_B_BG.tres" type="Texture" id=24]
+[ext_resource path="res://Levels/CrabTown/carbtown-backgrounds.sprites/Room 4 (Bonehead)/4_Baleen.tres" type="Texture" id=25]
+[ext_resource path="res://Levels/DoorTeleport.tscn" type="PackedScene" id=26]
 
 [sub_resource type="Shader" id=1]
 code = "/*
@@ -142,6 +169,146 @@ shader = SubResource( 9 )
 position = Vector2( 1, 0 )
 scale = Vector2( 2.5, 2.5 )
 
+[node name="Backlground" type="Node2D" parent="."]
+scale = Vector2( 2.07, 2.07 )
+
+[node name="Room1" type="Node2D" parent="Backlground"]
+position = Vector2( 18.1643, 1.93237 )
+
+[node name="1Bg" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 417.783, 56.6353 )
+texture = ExtResource( 4 )
+
+[node name="2BlackOverlay" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 417.783, 56.6353 )
+texture = ExtResource( 6 )
+
+[node name="3BoneBgFar" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 417.783, 56.6353 )
+texture = ExtResource( 8 )
+
+[node name="4BoneBgMid" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 417.783, 56.6353 )
+texture = ExtResource( 7 )
+
+[node name="5BoneBgClose" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 417.783, 56.6353 )
+texture = ExtResource( 9 )
+
+[node name="6WCh" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 417.783, 56.6353 )
+texture = ExtResource( 5 )
+
+[node name="Entrance" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( -20.4385, 236.715 )
+scale = Vector2( 1.26302, 1.26302 )
+texture = ExtResource( 3 )
+
+[node name="BSoftEdge" type="Sprite" parent="Backlground/Room1"]
+position = Vector2( 418.358, 78.4541 )
+texture = ExtResource( 2 )
+
+[node name="Room2" type="Node2D" parent="Backlground"]
+position = Vector2( 886.57, -263.768 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="1WCh" type="Sprite" parent="Backlground/Room2"]
+position = Vector2( 791.498, -200.966 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+
+[node name="2W" type="Sprite" parent="Backlground/Room2"]
+position = Vector2( 791.498, -200.966 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 16 )
+
+[node name="3Eyes" type="Sprite" parent="Backlground/Room2"]
+position = Vector2( 791.498, -200.966 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="4BCh" type="Sprite" parent="Backlground/Room2"]
+position = Vector2( 791.498, -200.966 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 15 )
+
+[node name="5WRing" type="Sprite" parent="Backlground/Room2"]
+position = Vector2( 791.498, -200.966 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+
+[node name="BEdge" type="Sprite" parent="Backlground/Room2"]
+position = Vector2( 863.675, -2531.06 )
+scale = Vector2( 1.85, 1.85 )
+texture = ExtResource( 10 )
+offset = Vector2( -69.3011, 1254.5 )
+
+[node name="Room3" type="Node2D" parent="Backlground"]
+position = Vector2( 73.2367, 85.6039 )
+
+[node name="2BlackOverlay" type="Sprite" parent="Backlground/Room3"]
+position = Vector2( 1197.38, -7.24638 )
+texture = ExtResource( 6 )
+
+[node name="3BoneBgFar" type="Sprite" parent="Backlground/Room3"]
+position = Vector2( 1197.38, -7.24638 )
+texture = ExtResource( 8 )
+
+[node name="4BoneBgMid" type="Sprite" parent="Backlground/Room3"]
+position = Vector2( 1197.38, -7.24638 )
+texture = ExtResource( 7 )
+
+[node name="5BoneBgClose" type="Sprite" parent="Backlground/Room3"]
+position = Vector2( 1197.38, -7.24638 )
+texture = ExtResource( 9 )
+
+[node name="6WCh" type="Sprite" parent="Backlground/Room3"]
+position = Vector2( 1197.38, -7.24638 )
+texture = ExtResource( 5 )
+
+[node name="BEdge" type="Sprite" parent="Backlground/Room3"]
+position = Vector2( 1263.19, -41.1594 )
+texture = ExtResource( 11 )
+
+[node name="Room4" type="Node2D" parent="Backlground"]
+position = Vector2( 143.188, -91.5942 )
+
+[node name="1Bone" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 18 )
+
+[node name="2Baleen" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 19 )
+
+[node name="3Baleen" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 21 )
+
+[node name="4Baleen" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1865.26, -315.503 )
+texture = ExtResource( 25 )
+
+[node name="5WCh" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 22 )
+
+[node name="6BBg" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 24 )
+
+[node name="7UpperSand" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 20 )
+
+[node name="8Skull" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 17 )
+
+[node name="BEdge-4" type="Sprite" parent="Backlground/Room4"]
+position = Vector2( 1826.86, -185.121 )
+texture = ExtResource( 23 )
+
 [node name="godrays" type="ColorRect" parent="."]
 visible = false
 material = SubResource( 2 )
@@ -157,3 +324,12 @@ margin_left = -2617.0
 margin_top = -2660.0
 margin_right = 3764.0
 margin_bottom = 40.0
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 512, 512 )
+format = 1
+tile_data = PoolIntArray( -131073, 0, 0, -196608, 0, 0, -196607, 0, 0, -196606, 22, 0, -196605, 44, 0, -196604, 37, 0, -196603, 23, 0, -196602, 0, 0, -196601, 0, 0, -196600, 0, 0, -196599, 0, 0, -65537, 0, 0, -131072, 0, 0, -131071, 24, 0, -131070, 42, 0, -131067, 38, 0, -131066, 25, 0, -131065, 26, 0, -131064, 27, 0, -131063, 28, 0, -1, 0, 0, -65536, 29, 0, -65535, 39, 0, -65534, 45, 0, -65533, 46, 0, -65532, 43, 0, -65531, 41, 0, -65530, 30, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, 65535, 0, 0, 0, 32, 0, 1, 36, 0, 2, 33, 0, 3, 34, 0, 4, 40, 0, 5, 47, 0, 6, 35, 0, 7, 0, 0, 131071, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0 )
+
+[node name="DoorTeleport" parent="." instance=ExtResource( 26 )]
+position = Vector2( 4858.4, -716 )

@@ -1,0 +1,9 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=2]
+
+[ext_resource path="res://Levels/CucumberPit/cuke-pit-backgrounds.png" type="Texture" id=1]
+
+[resource]
+flags = 7
+atlas = ExtResource( 1 )
+region = Rect2( 3728, 1288, 1010, 495 )
+margin = Rect2( 258, 556, 275, 1441 )

@@ -340,7 +340,7 @@ scale = Vector2( 0.618793, 766.418 )
 texture = SubResource( 8 )
 
 [node name="CRT" type="Sprite" parent="."]
-position = Vector2( 0, 65 )
+position = Vector2( -2, 65 )
 scale = Vector2( 0.391655, 0.391655 )
 texture = SubResource( 5 )
 region_enabled = true

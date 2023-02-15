@@ -1,7 +1,7 @@
 {
 	"textures": [
 		{
-			"image": "isopod-maze-backgrounds.png",
+			"image": "isopod-maze-background.png",
 			"size": {
 				"w": 1072,
 				"h": 1770
@@ -28,6 +28,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:5608800c8366589a0fb66fb5e6f604fe:1ac1d35e3dec98cb2099238c1af80551:4cc80c0721c57e715dac50b5d8643ef5$"
+		"smartupdate": "$TexturePacker:SmartUpdate:8b3562cdb901ad9ec3656c1888b3f055:1ac1d35e3dec98cb2099238c1af80551:551a8c2a01e71823c78d0ab932d0c584$"
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"textures": [
 		{
-			"image": "cuke-pits-backgrounds.png",
+			"image": "cuke-pit-backgrounds.png",
 			"size": {
 				"w": 12826,
 				"h": 2031
@@ -343,6 +343,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:a7fa9ceb90e413a4a140c81f596576d0:17fe21332b3891ac1fa52e8cc5db2595:237023f26a87cf7123ed077528e702e6$"
+		"smartupdate": "$TexturePacker:SmartUpdate:b442624a4bf925340ca24b2717438047:17fe21332b3891ac1fa52e8cc5db2595:9ca338beb5ed5ae3ac4a0979f925a026$"
 	}
 }

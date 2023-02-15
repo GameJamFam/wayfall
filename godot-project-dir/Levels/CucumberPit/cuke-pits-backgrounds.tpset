@@ -1,0 +1,348 @@
+{
+	"textures": [
+		{
+			"image": "cuke-pits-backgrounds.png",
+			"size": {
+				"w": 12826,
+				"h": 2031
+			},
+			"sprites": [
+				{
+					"filename": "Middle/6_W_CH.PNG",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 1285,
+						"h": 1936
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Top/6_W_CH.PNG",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 1285,
+						"h": 1936
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Middle/B_Edge.PNG",
+					"region": {
+						"x": 1288,
+						"y": 1,
+						"w": 1094,
+						"h": 1364
+					},
+					"margin": {
+						"x": 92,
+						"y": 255,
+						"w": 191,
+						"h": 572
+					}
+				},
+				{
+					"filename": "Bottom/1_BG.PNG",
+					"region": {
+						"x": 1288,
+						"y": 1367,
+						"w": 1699,
+						"h": 663
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Bottom/2_BG_Black.PNG",
+					"region": {
+						"x": 2384,
+						"y": 1,
+						"w": 2175,
+						"h": 1285
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Top/4_BG.PNG",
+					"region": {
+						"x": 2989,
+						"y": 1288,
+						"w": 737,
+						"h": 583
+					},
+					"margin": {
+						"x": 249,
+						"y": 592,
+						"w": 548,
+						"h": 1353
+					}
+				},
+				{
+					"filename": "Middle/3.2_BG.PNG",
+					"region": {
+						"x": 3728,
+						"y": 1288,
+						"w": 1010,
+						"h": 495
+					},
+					"margin": {
+						"x": 258,
+						"y": 556,
+						"w": 275,
+						"h": 1441
+					}
+				},
+				{
+					"filename": "Bottom/7_W_CH.PNG",
+					"region": {
+						"x": 4561,
+						"y": 1,
+						"w": 2175,
+						"h": 1285
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Bottom/8_BG_Sand.PNG",
+					"region": {
+						"x": 3728,
+						"y": 1785,
+						"w": 2039,
+						"h": 183
+					},
+					"margin": {
+						"x": 110,
+						"y": 1084,
+						"w": 136,
+						"h": 1102
+					}
+				},
+				{
+					"filename": "Middle/3.3_BG.PNG",
+					"region": {
+						"x": 4740,
+						"y": 1288,
+						"w": 829,
+						"h": 495
+					},
+					"margin": {
+						"x": 0,
+						"y": 271,
+						"w": 456,
+						"h": 1441
+					}
+				},
+				{
+					"filename": "Middle/3.1_BG.PNG",
+					"region": {
+						"x": 5571,
+						"y": 1288,
+						"w": 1008,
+						"h": 494
+					},
+					"margin": {
+						"x": 0,
+						"y": 942,
+						"w": 277,
+						"h": 1442
+					}
+				},
+				{
+					"filename": "Bottom/4_BG.PNG",
+					"region": {
+						"x": 6581,
+						"y": 1288,
+						"w": 1884,
+						"h": 409
+					},
+					"margin": {
+						"x": 112,
+						"y": 870,
+						"w": 291,
+						"h": 876
+					}
+				},
+				{
+					"filename": "Middle/4_BG.PNG",
+					"region": {
+						"x": 6738,
+						"y": 1,
+						"w": 934,
+						"h": 1261
+					},
+					"margin": {
+						"x": 170,
+						"y": 308,
+						"w": 351,
+						"h": 675
+					}
+				},
+				{
+					"filename": "Bottom/5_BG.PNG",
+					"region": {
+						"x": 6581,
+						"y": 1699,
+						"w": 1774,
+						"h": 282
+					},
+					"margin": {
+						"x": 175,
+						"y": 882,
+						"w": 401,
+						"h": 1003
+					}
+				},
+				{
+					"filename": "Middle/5_BG.PNG",
+					"region": {
+						"x": 7674,
+						"y": 1,
+						"w": 1172,
+						"h": 1225
+					},
+					"margin": {
+						"x": 56,
+						"y": 432,
+						"w": 113,
+						"h": 711
+					}
+				},
+				{
+					"filename": "Top/5_BG.PNG",
+					"region": {
+						"x": 8467,
+						"y": 1228,
+						"w": 610,
+						"h": 785
+					},
+					"margin": {
+						"x": 324,
+						"y": 419,
+						"w": 675,
+						"h": 1151
+					}
+				},
+				{
+					"filename": "Bottom/B_Edge.PNG",
+					"region": {
+						"x": 8848,
+						"y": 1,
+						"w": 2072,
+						"h": 1186
+					},
+					"margin": {
+						"x": 47,
+						"y": 99,
+						"w": 103,
+						"h": 99
+					}
+				},
+				{
+					"filename": "Bottom/6_BG.PNG",
+					"region": {
+						"x": 9079,
+						"y": 1189,
+						"w": 1759,
+						"h": 834
+					},
+					"margin": {
+						"x": 196,
+						"y": 256,
+						"w": 416,
+						"h": 451
+					}
+				},
+				{
+					"filename": "Bottom/3_BG.PNG",
+					"region": {
+						"x": 10840,
+						"y": 1189,
+						"w": 1985,
+						"h": 389
+					},
+					"margin": {
+						"x": 120,
+						"y": 872,
+						"w": 190,
+						"h": 896
+					}
+				},
+				{
+					"filename": "Top/3_BG.PNG",
+					"region": {
+						"x": 10922,
+						"y": 1,
+						"w": 1035,
+						"h": 1019
+					},
+					"margin": {
+						"x": 183,
+						"y": 318,
+						"w": 250,
+						"h": 917
+					}
+				},
+				{
+					"filename": "Top/7_Entrance.PNG",
+					"region": {
+						"x": 10840,
+						"y": 1580,
+						"w": 351,
+						"h": 261
+					},
+					"margin": {
+						"x": 553,
+						"y": 385,
+						"w": 934,
+						"h": 1675
+					}
+				},
+				{
+					"filename": "Top/B_Edge.PNG",
+					"region": {
+						"x": 11959,
+						"y": 1,
+						"w": 599,
+						"h": 901
+					},
+					"margin": {
+						"x": 335,
+						"y": 359,
+						"w": 686,
+						"h": 1035
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a7fa9ceb90e413a4a140c81f596576d0:17fe21332b3891ac1fa52e8cc5db2595:237023f26a87cf7123ed077528e702e6$"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"textures": [
+		{
+			"image": "isopod-maze-backgrounds.png",
+			"size": {
+				"w": 1072,
+				"h": 1770
+			},
+			"sprites": [
+				{
+					"filename": "Village/Isopod_Interior.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 1070,
+						"h": 1768
+					},
+					"margin": {
+						"x": 164,
+						"y": 117,
+						"w": 215,
+						"h": 407
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:5608800c8366589a0fb66fb5e6f604fe:1ac1d35e3dec98cb2099238c1af80551:4cc80c0721c57e715dac50b5d8643ef5$"
+	}
+}

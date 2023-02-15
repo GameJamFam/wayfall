@@ -1,0 +1,348 @@
+{
+	"textures": [
+		{
+			"image": "carbtown-backgrounds.png",
+			"size": {
+				"w": 11883,
+				"h": 2037
+			},
+			"sprites": [
+				{
+					"filename": "Room 2 (Shark)/B_Edge.PNG",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 2096,
+						"h": 1293
+					},
+					"margin": {
+						"x": 18,
+						"y": 0,
+						"w": 307,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Room 3 (Small Dome)/B_Edge.PNG",
+					"region": {
+						"x": 1,
+						"y": 1296,
+						"w": 1515,
+						"h": 740
+					},
+					"margin": {
+						"x": 28,
+						"y": 0,
+						"w": 45,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Pieces/3_BoneBG_Far.PNG",
+					"region": {
+						"x": 1518,
+						"y": 1296,
+						"w": 1699,
+						"h": 663
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Pieces/Sand.PNG",
+					"region": {
+						"x": 1518,
+						"y": 1961,
+						"w": 1699,
+						"h": 63
+					},
+					"margin": {
+						"x": 0,
+						"y": 560,
+						"w": 0,
+						"h": 600
+					}
+				},
+				{
+					"filename": "Room 2 (Shark)/4_B_CH.PNG",
+					"region": {
+						"x": 2099,
+						"y": 1,
+						"w": 1993,
+						"h": 1263
+					},
+					"margin": {
+						"x": 41,
+						"y": 0,
+						"w": 410,
+						"h": 30
+					}
+				},
+				{
+					"filename": "Pieces/4_BoneBG_Mid.PNG",
+					"region": {
+						"x": 3219,
+						"y": 1266,
+						"w": 1699,
+						"h": 663
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/7_UpperSand.PNG",
+					"region": {
+						"x": 3219,
+						"y": 1931,
+						"w": 358,
+						"h": 40
+					},
+					"margin": {
+						"x": 671,
+						"y": 267,
+						"w": 1676,
+						"h": 860
+					}
+				},
+				{
+					"filename": "Room 2 (Shark)/2_W.PNG",
+					"region": {
+						"x": 4094,
+						"y": 1,
+						"w": 1750,
+						"h": 1186
+					},
+					"margin": {
+						"x": 202,
+						"y": 45,
+						"w": 653,
+						"h": 107
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/2_Baleen.PNG",
+					"region": {
+						"x": 4920,
+						"y": 1189,
+						"w": 1047,
+						"h": 829
+					},
+					"margin": {
+						"x": 76,
+						"y": 15,
+						"w": 987,
+						"h": 71
+					}
+				},
+				{
+					"filename": "Room 2 (Shark)/1_W_CH.PNG",
+					"region": {
+						"x": 5846,
+						"y": 1,
+						"w": 1534,
+						"h": 1040
+					},
+					"margin": {
+						"x": 466,
+						"y": 207,
+						"w": 869,
+						"h": 253
+					}
+				},
+				{
+					"filename": "Pieces/FG_Gunk.PNG",
+					"region": {
+						"x": 5846,
+						"y": 1043,
+						"w": 233,
+						"h": 139
+					},
+					"margin": {
+						"x": 6,
+						"y": 4,
+						"w": 10,
+						"h": 5
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/B_Edge.PNG",
+					"region": {
+						"x": 5969,
+						"y": 1184,
+						"w": 1849,
+						"h": 825
+					},
+					"margin": {
+						"x": 76,
+						"y": 23,
+						"w": 185,
+						"h": 75
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/4_Baleen.PNG",
+					"region": {
+						"x": 7382,
+						"y": 1,
+						"w": 1226,
+						"h": 900
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 808,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Room 1 (Intro)/Entrance.PNG",
+					"region": {
+						"x": 7382,
+						"y": 903,
+						"w": 180,
+						"h": 255
+					},
+					"margin": {
+						"x": 12,
+						"y": 8,
+						"w": 18,
+						"h": 10
+					}
+				},
+				{
+					"filename": "Room 2 (Shark)/5_W_ring.PNG",
+					"region": {
+						"x": 7820,
+						"y": 903,
+						"w": 992,
+						"h": 873
+					},
+					"margin": {
+						"x": 587,
+						"y": 254,
+						"w": 1411,
+						"h": 420
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/3_Baleen.PNG",
+					"region": {
+						"x": 8610,
+						"y": 1,
+						"w": 1144,
+						"h": 786
+					},
+					"margin": {
+						"x": 24,
+						"y": 114,
+						"w": 890,
+						"h": 114
+					}
+				},
+				{
+					"filename": "Pieces/5_BoneBG_Close.PNG",
+					"region": {
+						"x": 8814,
+						"y": 789,
+						"w": 1699,
+						"h": 663
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Room 2 (Shark)/3_eyes.PNG",
+					"region": {
+						"x": 8814,
+						"y": 1454,
+						"w": 620,
+						"h": 462
+					},
+					"margin": {
+						"x": 845,
+						"y": 435,
+						"w": 1783,
+						"h": 831
+					}
+				},
+				{
+					"filename": "Room 1 (Intro)/B_SoftEdge.PNG",
+					"region": {
+						"x": 9756,
+						"y": 1,
+						"w": 1699,
+						"h": 639
+					},
+					"margin": {
+						"x": 0,
+						"y": 24,
+						"w": 0,
+						"h": 24
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/6_B_BG.PNG",
+					"region": {
+						"x": 9436,
+						"y": 1454,
+						"w": 1367,
+						"h": 441
+					},
+					"margin": {
+						"x": 567,
+						"y": 57,
+						"w": 667,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Room 4 (Bonehead)/8_Skull.PNG",
+					"region": {
+						"x": 10515,
+						"y": 642,
+						"w": 1367,
+						"h": 441
+					},
+					"margin": {
+						"x": 567,
+						"y": 57,
+						"w": 667,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Pieces/FG_Baleen_Corner.PNG",
+					"region": {
+						"x": 10515,
+						"y": 1085,
+						"w": 322,
+						"h": 303
+					},
+					"margin": {
+						"x": 4,
+						"y": 6,
+						"w": 4,
+						"h": 6
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:90aff191825a934419e9a12b1205923e:21bcd9e057397aadac2c4d3d8bcfe180:52413282376cc62f957ed4aed8708882$"
+	}
+}

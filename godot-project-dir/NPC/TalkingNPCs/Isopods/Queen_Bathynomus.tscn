@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://NPC/all-character-sprites.sprites/Isopod_Queen_1.tres" type="Texture" id=1]
 [ext_resource path="res://player/NPC.gd" type="Script" id=2]
 [ext_resource path="res://NPC/TalkingNPCs/TalkIcon.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Audio/BGM/Airpod.ogg" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 435.074
@@ -21,6 +22,7 @@ height = 212.0
 
 [node name="Queen_Bathynomus" type="Node2D"]
 script = ExtResource( 2 )
+airpod_sound = ExtResource( 4 )
 
 [node name="InteractionSphere" type="Area2D" parent="."]
 

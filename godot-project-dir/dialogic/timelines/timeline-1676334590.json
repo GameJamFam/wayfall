@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1676338011.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey.\n\nHow's it going?\n\nWhat, me? I'm just trying to chill, but these hagfish keep cramping my style. I don't get it, they just keep bashing me in the face.\n\nAny way, I'm just going to chill here. If you find some tunes, let me know. I'm kinda bored."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676334590.json",
+		"name": "Lee_Ratfish_init"
+	}
+}

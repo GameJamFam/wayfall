@@ -453,7 +453,6 @@ offset = Vector2( -913.266, 0.0603106 )
 
 [node name="Health" type="Node2D" parent="."]
 position = Vector2( 89, 73 )
-scale = Vector2( 1, 1 )
 script = ExtResource( 14 )
 
 [node name="tick1" type="ColorRect" parent="Health"]

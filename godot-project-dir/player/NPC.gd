@@ -19,7 +19,7 @@ func _on_pressed_interact(airpod):
 		return
 	dialogue = Dialogic.start(dialogic_timeline)
 	dialogue_playing = true
-	add_child(dialogue)
+	get_tree().root.add_child(dialogue)
 	player.set_input(false)
 	dialogic_timeline = ""
 	yield(dialogue, "timeline_end")

@@ -1,0 +1,114 @@
+{
+	"events": [
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, welcome traveller! You enter the dungeons of Ba'al Timor.\n\nWhat do you mean you haven't heard of it? Haven't you played the latest Demono game?\n\nOh my god, you haven't. What a dweeb! It's probably way over your head. Here, let me explain it to you!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Listen to Jacques explain the intricacies of his online world?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Great! Our story begins six ages ago, in the primordial soups of Ghaleese."
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Trust me, it's gonna be right up your alley."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Back in the earliest days of the world, everything was closer to soup than anything else. Chunky soup, smooth soup, you name it.\n\nEveryone and everything was a soup. You get the picture.\n\nSuddenly, Horu the Destroyer appeared, crossing into this world from that of [i]Isopolese 7[/i]!"
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What, haven't you seen [i]Isopolese 7[/i]?"
+		},
+		{
+			"choice": "Of course",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Not yet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Amazing! And you consider your life to have meaning?"
+		},
+		{
+			"choice": "I've decided this conversation isn't worth it",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Trust me, it's gonna blow your lid. See, Horu the Destroyer is this warlord from the -4th Dimension who kicks ass!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676337940.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, Horu came in and beat all of the soup into a frothy form. This foam rose to the top, where it crustified into the structured life we know today.\n\nKings, oceans, taxes...it's all just soup foam.\n\nTime passes and the structures begin to foam upon themselves, taking on new and complex forms of life, imbued with the ass-kicking ability of Horu.\n\nThose who study the sacred ways are called \"Horugaloos\", and they have all kinds of fantastical abilities!\n\nThey can fly for up to 20 seconds, they have a +5% bonus to damage, and only need to sleep once every two days!\n\nOf course, their studies have taken a mental toll and they are generally considered \"unpleasent to be around\". I relate to them a lot.\n\nWait, where are you going?"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676333954.json",
+		"name": "Jacques_init"
+	}
+}

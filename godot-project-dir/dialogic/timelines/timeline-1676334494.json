@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"character": "character-1676338070.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=50 level=20]BACK AGAIN? YOU'RE STARTING TO REALLY PISS ME OFF.[/shake]"
+		},
+		{
+			"character": "character-1676338070.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=50 level=20]THINK I SHOULD STILL BEAT THE EVERLOVING FISH CHRIST OUT OF YOU?[/shake]"
+		},
+		{
+			"choice": "Try it",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "On second thought, maybe not",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676338070.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=90 level=20]TOO *&^@$*% BAD FOR YOU THEN[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "load_crab_fight",
+				"target_node_path": "/root/root"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676334494.json",
+		"name": "King_Rathbuni_repeat"
+	}
+}

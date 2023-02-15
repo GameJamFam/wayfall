@@ -1,0 +1,55 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Levels/ShrimpTown/L_ShrimpTown.tscn" type="PackedScene" id=1]
+[ext_resource path="res://NPC/Osedax/Osedax_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/CrabTown/L_CrabTown.tscn" type="PackedScene" id=3]
+[ext_resource path="res://NPC/Urchin/C_Urchin.tscn" type="PackedScene" id=5]
+[ext_resource path="res://NPC/TalkingNPCs/Misc/Lee_Ratfish.tscn" type="PackedScene" id=6]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Levels/CucumberPit/L_CucumberPit.tscn" type="PackedScene" id=8]
+[ext_resource path="res://NPC/Hagfish/Hagfish.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Inventory/Items/Airpod.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Levels/IsopodTown/L_IsopodWay.tscn" type="PackedScene" id=12]
+
+[node name="TestScene" type="Node"]
+
+[node name="L_ShrimpTown" parent="." instance=ExtResource( 1 )]
+position = Vector2( 12, -7 )
+
+[node name="L_IsopodWay" parent="." instance=ExtResource( 12 )]
+position = Vector2( -4998, -6331 )
+
+[node name="L_CucumberPit" parent="." instance=ExtResource( 8 )]
+position = Vector2( 14401, -299 )
+
+[node name="L_CrabTown" parent="." instance=ExtResource( 3 )]
+position = Vector2( -3053, 929 )
+
+[node name="Player" parent="." instance=ExtResource( 7 )]
+position = Vector2( -31, 792 )
+speed = Vector2( 250, 200 )
+
+[node name="Airpod" parent="." instance=ExtResource( 10 )]
+position = Vector2( 589, 1156 )
+
+[node name="Lee_Ratfish" parent="." instance=ExtResource( 6 )]
+position = Vector2( 998, 1405 )
+
+[node name="NPCs" type="Node" parent="."]
+
+[node name="C_Urchin" parent="NPCs" instance=ExtResource( 5 )]
+position = Vector2( 401, 1244 )
+
+[node name="Osedax" parent="NPCs" instance=ExtResource( 2 )]
+position = Vector2( 394, 1495 )
+
+[node name="Hagfish" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1743, 964 )
+
+[node name="Hagfish2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1262, -103 )
+rotation = -1.09258
+
+[node name="Hagfish3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -257, 2107 )
+rotation = 2.73144

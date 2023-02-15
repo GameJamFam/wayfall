@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Levels/ShrimpTown/shrimp-town.res" type="TileSet" id=1]
 [ext_resource path="res://NPC/TalkingNPCs/Shrimps/Jacques.tscn" type="PackedScene" id=2]
 [ext_resource path="res://NPC/TalkingNPCs/Shrimps/Lace.tscn" type="PackedScene" id=3]
 [ext_resource path="res://NPC/TalkingNPCs/Shrimps/Peony_Phylo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://NPC/TalkingNPCs/Shrimps/Gramps.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/DoorTeleport.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 229.125, 20.5 )
@@ -26,7 +27,7 @@ cell_size = Vector2( 512, 512 )
 format = 1
 tile_data = PoolIntArray( -65537, 1, 0, -131072, 2, 0, -1, 8, 0, -65536, 6, 0, 65535, 9, 0, 0, 7, 0, 131069, 12, 0, 131070, 0, 0, 131071, 3, 0, 65536, 4, 0, 65537, 5, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 262142, 11, 0, 196608, 13, 0, 196610, 14, 0, 196612, 10, 0 )
 
-[node name="InteriorWalls" type="Node" parent="."]
+[node name="InteriorWalls" type="Node2D" parent="."]
 
 [node name="Jacques" type="StaticBody2D" parent="InteriorWalls"]
 position = Vector2( 2189, 1843 )
@@ -126,14 +127,60 @@ shape = SubResource( 4 )
 position = Vector2( 199, -28 )
 shape = SubResource( 4 )
 
-[node name="Gramps" parent="." instance=ExtResource( 5 )]
+[node name="NPCs" type="Node2D" parent="."]
+
+[node name="Gramps" parent="NPCs" instance=ExtResource( 5 )]
 position = Vector2( -867, 1843 )
 
-[node name="Jacques" parent="." instance=ExtResource( 2 )]
+[node name="Jacques" parent="NPCs" instance=ExtResource( 2 )]
 position = Vector2( 2431, 1838 )
 
-[node name="Lace" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1248, 1792 )
+[node name="Lace" parent="NPCs" instance=ExtResource( 3 )]
+position = Vector2( 1206, 1793 )
 
-[node name="Peony_Phylo" parent="." instance=ExtResource( 4 )]
+[node name="Peony_Phylo" parent="NPCs" instance=ExtResource( 4 )]
 position = Vector2( -1232, 814 )
+
+[node name="InteriorDoors" type="Node2D" parent="."]
+
+[node name="Gramps_from" parent="InteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( -584, 1838 )
+teleport_to = Vector2( -201, 559 )
+
+[node name="Jacques_from" parent="InteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( 2141, 1870 )
+teleport_to = Vector2( 602, 935 )
+
+[node name="Lace_from" parent="InteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( 1413, 1869 )
+teleport_to = Vector2( 247, 911 )
+
+[node name="Peony_from" parent="InteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( -1448, 817 )
+teleport_to = Vector2( -301, 925 )
+
+[node name="Store_from" parent="InteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( 238, 1863 )
+teleport_to = Vector2( 216, 572 )
+
+[node name="ExteriorDoors" type="Node2D" parent="."]
+
+[node name="Gramps_to" parent="ExteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( -201, 559 )
+teleport_to = Vector2( -584, 1838 )
+
+[node name="Jacques_to" parent="ExteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( 602, 935 )
+teleport_to = Vector2( 2141, 1870 )
+
+[node name="Lace_to" parent="ExteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( 247, 911 )
+teleport_to = Vector2( 1413, 1869 )
+
+[node name="Peony_to" parent="ExteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( -301, 925 )
+teleport_to = Vector2( -1448, 817 )
+
+[node name="Store_to" parent="ExteriorDoors" instance=ExtResource( 6 )]
+position = Vector2( 216, 572 )
+teleport_to = Vector2( 238, 1863 )

@@ -30,7 +30,8 @@
 		"Themes": {
 			"files": [
 				"default-theme.cfg",
-				"theme-1676169443.cfg"
+				"theme-1676169443.cfg",
+				"theme-1676413037.cfg"
 			],
 			"folders": {
 
@@ -45,6 +46,112 @@
 				"timeline-1676147179.json"
 			],
 			"folders": {
+				"Dialogues": {
+					"files": [
+
+					],
+					"folders": {
+						"Crabs": {
+							"files": [
+								"timeline-1676334483.json",
+								"timeline-1676334494.json"
+							],
+							"folders": {
+								"Random_Crabs": {
+									"files": [
+										"timeline-1676338171.json",
+										"timeline-1676338185.json",
+										"timeline-1676338190.json",
+										"timeline-1676338193.json",
+										"timeline-1676338196.json",
+										"timeline-1676338199.json"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": false
+									}
+								}
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"Cucumbers": {
+							"files": [
+								"timeline-1676334321.json",
+								"timeline-1676346454.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"Isopods": {
+							"files": [
+								"timeline-1676334057.json",
+								"timeline-1676334069.json",
+								"timeline-1676334084.json",
+								"timeline-1676334091.json",
+								"timeline-1676334100.json",
+								"timeline-1676334111.json",
+								"timeline-1676334120.json",
+								"timeline-1676334128.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"Misc": {
+							"files": [
+								"timeline-1676334590.json",
+								"timeline-1676334601.json",
+								"timeline-1676334955.json",
+								"timeline-1676334973.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"Shrimp": {
+							"files": [
+								"timeline-1676333891.json",
+								"timeline-1676333908.json",
+								"timeline-1676333915.json",
+								"timeline-1676333921.json",
+								"timeline-1676333954.json",
+								"timeline-1676333971.json",
+								"timeline-1676334001.json",
+								"timeline-1676147179.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						}
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
 				"ItemPickups": {
 					"files": [
 						"timeline-1676233173.json"

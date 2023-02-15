@@ -5,10 +5,78 @@
 	"folders": {
 		"Characters": {
 			"files": [
-				"character-1676147186.json"
+
 			],
 			"folders": {
+				"Crabs": {
+					"files": [
+						"character-1676338063.json",
+						"character-1676338070.json"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Cucumbers": {
+					"files": [
+						"character-1676338052.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Isopods": {
+					"files": [
+						"character-1676338026.json",
+						"character-1676338030.json",
+						"character-1676338034.json",
+						"character-1676338041.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Misc": {
+					"files": [
+						"character-1676338011.json",
+						"character-1676338015.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Shrimp": {
+					"files": [
+						"character-1676147186.json",
+						"character-1676337940.json",
+						"character-1676337947.json",
+						"character-1676337951.json",
+						"character-1676343909.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
@@ -43,7 +111,7 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1676147179.json"
+
 			],
 			"folders": {
 				"Dialogues": {
@@ -71,7 +139,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								}
 							},
@@ -124,7 +192,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"Shrimp": {
@@ -143,7 +211,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},

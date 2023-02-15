@@ -52,7 +52,7 @@ var teleporting = false
 func go_to_last_checkpoint():
 	position = last_checkpoint
 
-func _on_checkpoint_set(pos:Vector2):
+func checkpoint_set(pos:Vector2):
 	last_checkpoint = pos
 
 func get_input():

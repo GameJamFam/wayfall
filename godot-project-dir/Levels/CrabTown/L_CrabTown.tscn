@@ -271,7 +271,7 @@ position = Vector2( 1263.19, -41.1594 )
 texture = ExtResource( 11 )
 
 [node name="Room4" type="Node2D" parent="Backlground"]
-position = Vector2( 143.188, -91.5942 )
+position = Vector2( 143.768, -100.87 )
 
 [node name="1Bone" type="Sprite" parent="Backlground/Room4"]
 position = Vector2( 1826.86, -185.121 )
